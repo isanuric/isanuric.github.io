@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/isanuric/blogger/static/js/main.27da33b9.chunk.js",
+    "main.js.map": "/isanuric/blogger/static/js/main.27da33b9.chunk.js.map",
+    "runtime-main.js": "/isanuric/blogger/static/js/runtime-main.e87ab15b.js",
+    "runtime-main.js.map": "/isanuric/blogger/static/js/runtime-main.e87ab15b.js.map",
+    "static/js/2.22536779.chunk.js": "/isanuric/blogger/static/js/2.22536779.chunk.js",
+    "static/js/2.22536779.chunk.js.map": "/isanuric/blogger/static/js/2.22536779.chunk.js.map",
+    "index.html": "/isanuric/blogger/index.html",
+    "static/js/2.22536779.chunk.js.LICENSE.txt": "/isanuric/blogger/static/js/2.22536779.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e87ab15b.js",
+    "static/js/2.22536779.chunk.js",
+    "static/js/main.27da33b9.chunk.js"
+  ]
+}
