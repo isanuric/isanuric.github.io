@@ -10,6 +10,7 @@ import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles({
   card: {
     margin: 45,
+    minWidth: 250,
   },
   typography: {
     direction: "rtl",

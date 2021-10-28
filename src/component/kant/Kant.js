@@ -7,14 +7,14 @@ import { makeStyles } from "@mui/styles";
 import Data from "./Data";
 
 const useStyles = makeStyles({
-  typography: {
+  headTitle: {
     marginTop: "3rem",
     height: "100px",
     display: "flex",
     // flexDirection: "column",
     // justifyContent: "space-arownd",
     justifyContent: "center",
-    alignItems: "center",
+    // alignItems: "center",
     color: "gray",
     fontSize: "2rem",
   },
@@ -24,13 +24,9 @@ function Kant() {
 
   return (
     <div>
-      {/* <BlogPicture /> */}
-      <Typography className={classes.typography}>
-        ایمانوئل کانت
-        {/* <h6 align="center"> Immanuel Kant</h6> */}
-      </Typography>
+      <Typography className={classes.headTitle}>ایمانوئل کانت</Typography>
       <Grid container>
-        <Grid item xs={12} sm={3}></Grid>
+        <Grid item xs={0} sm={3}></Grid>
         <Grid item xs={12} sm={6}>
           <ContentAll data={Data} />
         </Grid>
