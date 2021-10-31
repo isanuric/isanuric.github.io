@@ -19,7 +19,11 @@ const TabsCentered = () => {
     <div>
       <BrowserRouter>
         <Route path="/">
-          <Box sx={{ width: "100%", bgcolor: "background.paper" }}>
+          <Box
+            sx={{
+              width: "100%",
+            }}
+          >
             <Tabs value={value} onChange={handleChange} centered>
               <Tab label="کانت" value="/kant" component={Link} to="/kant" />
               <Tab

@@ -8,6 +8,7 @@ import {
   Grid,
   Typography,
   ButtonBase,
+  Button,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 // import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
@@ -21,7 +22,7 @@ const useStyles = makeStyles({
   },
 });
 
-function Home(props) {
+function Home() {
   const classes = useStyles();
 
   return (
@@ -30,7 +31,7 @@ function Home(props) {
       <Grid container>
         <Grid item xs={12} sm={2}></Grid>
         <Grid item xs={12} sm={4}>
-          <Link href={"#/tab2"}>
+          <Link href={"#/kant"}>
             <Card className={classes.card}>
               <CardMedia
                 component="img"
@@ -41,8 +42,9 @@ function Home(props) {
             </Card>
           </Link>
         </Grid>
+        {/* row 2 */}
         <Grid item xs={12} sm={4}>
-          <Link href={"#/tab3"}>
+          <Link href={"#/nietzsche"}>
             <Card className={classes.card}>
               <CardMedia
                 component="img"
@@ -64,25 +66,11 @@ function Home(props) {
                 component="img"
                 // height="140"
                 image="https://static.dw.com/image/17615415_303.jpg"
-                alt="Nietzsche"
+                alt="Heidegger"
               />
             </Card>
           </Link>
         </Grid>
-
-        {/* row 2 */}
-        {/* <Grid item xs={12} sm={2}></Grid>
-        <Grid item xs={12} sm={4}>
-          <Card className={classes.card}>
-            <Card component={Link} to="/tab2">
-              Go..
-            </Card>
-          </Card>
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <Card className={classes.card}>2</Card>
-        </Grid>
-        <Grid item xs={12} sm={2}></Grid> */}
       </Grid>
     </div>
   );

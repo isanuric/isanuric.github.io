@@ -3,6 +3,7 @@ import ContentAll from "../ContentAll";
 import Data from "./Data";
 import { Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import BottomLinks from "../BottomLinks";
 
 const useStyles = makeStyles({
   headTitle: {
@@ -26,6 +27,7 @@ function Nietzsche() {
         <Grid item xs={12} sm={3}></Grid>
         <Grid item xs={12} sm={6}>
           <ContentAll data={Data} />
+          <BottomLinks />
         </Grid>
       </Grid>
     </div>

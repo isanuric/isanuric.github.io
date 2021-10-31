@@ -35,29 +35,29 @@ function Post(props) {
   const classes = useStyles();
 
   return (
-    // <div>
-    <Card className={classes.card}>
-      <CardMedia
-        component="img"
-        height="260"
-        image={props.image}
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom align="right" component="div">
-          <h2>{props.title}</h2>
-        </Typography>
-        <Typography className={classes.subtitle}>احسان سلمانی</Typography>
+    <>
+      <Card className={classes.card}>
+        <CardMedia
+          component="img"
+          height="260"
+          image={props.image}
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom align="right" component="div">
+            <h2>{props.title}</h2>
+          </Typography>
+          <Typography className={classes.subtitle}>احسان سلمانی</Typography>
 
-        {/* <Typography sx={{ fontSize: "1.2rem" }}>{props.text}</Typography> */}
-        <Typography className={classes.typography}>{props.text}</Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-    // {/* </div> */}
+          {/* <Typography sx={{ fontSize: "1.2rem" }}>{props.text}</Typography> */}
+          <Typography className={classes.typography}>{props.text}</Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small">Share</Button>
+          <Button size="small">Learn More</Button>
+        </CardActions>
+      </Card>
+    </>
   );
 }
 

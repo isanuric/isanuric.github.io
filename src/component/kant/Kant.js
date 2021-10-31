@@ -5,6 +5,7 @@ import ContentAll from "../ContentAll";
 import { makeStyles } from "@mui/styles";
 
 import Data from "./Data";
+import BottomLinks from "../BottomLinks";
 
 const useStyles = makeStyles({
   headTitle: {
@@ -19,9 +20,9 @@ const useStyles = makeStyles({
     fontSize: "2rem",
   },
 });
+
 function Kant() {
   const classes = useStyles();
-
   return (
     <div>
       <Typography className={classes.headTitle}>ایمانوئل کانت</Typography>
@@ -29,6 +30,7 @@ function Kant() {
         <Grid item xs={0} sm={3}></Grid>
         <Grid item xs={12} sm={6}>
           <ContentAll data={Data} />
+          <BottomLinks />
         </Grid>
       </Grid>
     </div>
