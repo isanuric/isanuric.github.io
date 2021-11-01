@@ -8,6 +8,12 @@ import Nietzsche from "./component/nietzsche/Nietzsche";
 import Kant from "./component/kant/Kant";
 import Dropdown from "./component/Dropdown";
 
+const style = {
+  tab: {
+    fontSize: 20,
+  },
+};
+
 function App(location) {
   const allTabs = ["/", "/kant", "/nietzsche", "/heidegger"];
   return (
@@ -18,11 +24,12 @@ function App(location) {
           path="/"
           render={({ location }) => (
             // left tabs
-            <Box xs={12} sx={{ bgcolor: "error.main" }}>
+            <Box xs={12}>
               <Tabs variant="scrollable" value={location.pathname}>
                 <Dropdown />
                 <Box sx={{ flexGrow: 1 }}>
                   <Tab
+                    sx={style.tab}
                     xs={12}
                     label="خانه"
                     value="/"
@@ -31,26 +38,31 @@ function App(location) {
                   />
                   <Tab
                     disabled
+                    sx={style.tab}
                     label="تماس"
                     value="/contact"
                     component={Link}
                     to={allTabs[0]}
                   />
                 </Box>
-                // right tabs
+
+                {/* right tabs */}
                 <Tab
+                  sx={style.tab}
                   label="کانت"
                   value="/kant"
                   component={Link}
                   to={allTabs[1]}
                 />
                 <Tab
+                  sx={style.tab}
                   label="نیچه"
                   value="/nietzsche"
                   component={Link}
                   to={allTabs[2]}
                 />
                 <Tab
+                  sx={style.tab}
                   label="هایدگر"
                   value="/heidegger"
                   component={Link}
@@ -58,6 +70,7 @@ function App(location) {
                 />
                 <Tab
                   disabled
+                  sx={style.tab}
                   value="/note"
                   label="یادداشت‌ها"
                   component={Link}

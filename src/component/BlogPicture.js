@@ -8,13 +8,12 @@ const useStyles = makeStyles({
     backgroundImage: `url(
       "https://images.pexels.com/photos/3073700/pexels-photo-3073700.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     )`,
-    // height: "900px",
     minHeight: "100vh",
-
-    // backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    // backgroundPosition: "center",
     // position: "relative",
+
     // font
     display: "flex",
     justifyContent: "center",

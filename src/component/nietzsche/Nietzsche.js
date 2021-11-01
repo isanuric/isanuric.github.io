@@ -23,7 +23,6 @@ function Nietzsche() {
   return (
     <div>
       <Typography className={classes.headTitle}>فردریش ویلهلم نیچه</Typography>
-
       <Grid container>
         <Grid item xs={12} sm={3}></Grid>
         <Grid item xs={12} sm={6}>

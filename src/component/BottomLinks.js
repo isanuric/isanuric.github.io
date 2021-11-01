@@ -11,31 +11,35 @@ const style = {
     height: 100,
     display: "flex",
     flexWrap: "wrap",
-    // alignContent: "space-around",
+    // alignContent: "center",
     justifyContent: "center",
+    fontSize: 20,
+    mb: 20,
     // bgcolor: "gray",
+  },
+  link: {
+    mr: 5,
   },
 };
 
 function BottomLinks() {
   return (
     <Box sx={style.bottomLinks}>
-      <Link href="#/kant" underline="none">
-        <MenuItem>کانت</MenuItem>
+      <Link href="#/heidegger" underline="none" sx={style.link}>
+        هایدگر
       </Link>
-      <Link href="#/nietzsche" underline="none">
-        <MenuItem>نیچه</MenuItem>
+      <Link href="#/nietzsche" underline="none" sx={style.link}>
+        نیچه
       </Link>
-      <Link href="#/heidegger" underline="none">
-        <MenuItem>هایدگر</MenuItem>
+      <Link href="#/kant" underline="none" sx={style.link}>
+        کانت
       </Link>
-      <Link href="#/" underline="none">
-        <MenuItem>تماس</MenuItem>
+      <Link href="#/" underline="none" sx={style.link}>
+        تماس
       </Link>
-      <Link href="#/" underline="none">
-        <MenuItem>خانه</MenuItem>
+      <Link href="#/" underline="none" sx={style.link}>
+        خانه
       </Link>
-      {/* <SimpleBottomNavigation /> */}
     </Box>
   );
 }

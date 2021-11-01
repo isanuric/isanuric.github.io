@@ -1,12 +1,4 @@
-import {
-  AppBar,
-  Container,
-  Toolbar,
-  Grid,
-  Typography,
-  Link,
-  MenuItem,
-} from "@mui/material";
+import { AppBar, Typography, Link } from "@mui/material";
 import { Box } from "@mui/system";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import Links from "./Links";
@@ -24,6 +16,7 @@ const style = {
   },
   typography: {
     fontSize: 14,
+    mr: 0.5,
   },
   link: {
     display: "flex",
@@ -37,17 +30,8 @@ const style = {
 export default function Footer() {
   return (
     <AppBar position="static" sx={{ bgcolor: "gray" }}>
-      {/* <Container> */}
-      {/* <Toolbar> */}
       <Box container sx={style.centralizer}>
         <Box>
-          <Link
-            sx={style.link}
-            href="https://www.heidegger-gesellschaft.de/"
-            target="_blank"
-          >
-            Martin-Heidegger-Gesellschaft
-          </Link>
           <Link
             sx={style.link}
             href="https://www.projekt-gutenberg.org/index.html"
@@ -55,6 +39,28 @@ export default function Footer() {
           >
             Projekt Gutenburg
           </Link>
+          <Link
+            sx={style.link}
+            href="https://www.projekt-gutenberg.org/autoren/namen/kant.html"
+            target="_blank"
+          >
+            Immanuel Kant
+          </Link>
+          <Link
+            sx={style.link}
+            href="https://www.projekt-gutenberg.org/autoren/namen/nietzsch.html"
+            target="_blank"
+          >
+            Friedrich Wilhelm Nietzsche
+          </Link>
+          <Link
+            sx={style.link}
+            href="https://www.heidegger-gesellschaft.de/"
+            target="_blank"
+          >
+            Martin-Heidegger-Gesellschaft
+          </Link>
+
           <Link sx={style.link} href="https://www.philomag.de/" target="_blank">
             Philosophie Magazin
           </Link>
@@ -65,6 +71,13 @@ export default function Footer() {
           >
             Metzler Lexikon Philosophie
           </Link>
+          <Link
+            sx={style.link}
+            href="https://plato.stanford.edu/contents.html"
+            target="_blank"
+          >
+            Stanford Encyclopedia of Philosophy (eng)
+          </Link>
         </Box>
         <Links />
       </Box>
@@ -72,6 +85,7 @@ export default function Footer() {
       {/* Copyright (c) */}
       <Box sx={style.centralizer}>
         <Box sx={{ display: "flex" }}>
+          <Typography sx={style.typography}>Founded and created by</Typography>
           <CopyrightIcon sx={{ fontSize: "medium", mr: 0.5 }} />
           <Typography sx={style.typography}>Ehsan Salmani | 2021</Typography>
         </Box>

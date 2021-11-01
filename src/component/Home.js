@@ -3,56 +3,62 @@ import BlogPicture from "./BlogPicture";
 import {
   Card,
   CardActionArea,
-  CardMedia,
   CardContent,
+  CardMedia,
   Grid,
   Typography,
-  ButtonBase,
-  Button,
 } from "@mui/material";
-import { makeStyles } from "@mui/styles";
-// import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import Link from "@mui/material/Link";
-import Kant from "./kant/Kant";
 import Footer from "./Footer";
+import { Box } from "@mui/system";
 
-const useStyles = makeStyles({
+const style = {
   card: {
-    margin: 45,
-    height: 260,
+    margin: 5,
   },
-});
+  cardMedia: {
+    maxHeight: 200,
+  },
+  cardContent: {
+    display: "flex",
+    justifyContent: "space-around",
+    fontSize: 26,
+  },
+};
 
 function Home() {
-  const classes = useStyles();
-
   return (
     <div>
       <BlogPicture />
       <Grid container>
         <Grid item xs={12} sm={2}></Grid>
         <Grid item xs={12} sm={4}>
-          <Link href={"#/kant"}>
-            <Card className={classes.card}>
+          {/* <Link href={"#/kant"} underline="none"> */}
+          <Card sx={style.card}>
+            <CardActionArea href={"#/kant"}>
               <CardMedia
+                sx={style.cardMedia}
                 component="img"
-                // height="140"
                 image="https://kant-online.ru/en/wp-content/uploads/2014/07/kant1.jpg"
                 alt="Kant"
               />
-            </Card>
-          </Link>
+              <CardContent sx={style.cardContent}>ایمانوئل کانت</CardContent>
+            </CardActionArea>
+          </Card>
+          {/* </Link> */}
         </Grid>
         {/* row 2 */}
         <Grid item xs={12} sm={4}>
-          <Link href={"#/nietzsche"}>
-            <Card className={classes.card}>
+          <Link href={"#/nietzsche"} underline="none">
+            <Card sx={style.card}>
               <CardMedia
+                sx={style.cardMedia}
                 component="img"
                 // height="140"
                 image="https://upload.wikimedia.org/wikipedia/commons/5/53/Nietzsche_Olde_08.JPG"
                 alt="Nietzsche"
               />
+              <CardContent sx={style.cardContent}>فریدریش نیچه</CardContent>
             </Card>
           </Link>
         </Grid>
@@ -61,17 +67,21 @@ function Home() {
       <Grid container>
         <Grid item xs={12} sm={2}></Grid>
         <Grid item xs={12} sm={4}>
-          <Link href={"#/heidegger"}>
-            <Card className={classes.card}>
+          <Link href={"#/heidegger"} underline="none">
+            <Card sx={style.card}>
               <CardMedia
+                sx={style.cardMedia}
                 component="img"
                 // height="140"
                 image="https://static.dw.com/image/17615415_303.jpg"
                 alt="Heidegger"
               />
+              <CardContent sx={style.cardContent}>هایدگر</CardContent>
             </Card>
           </Link>
         </Grid>
+
+        <Box sx={{ mb: 100 }}></Box>
       </Grid>
       <Footer />
     </div>
