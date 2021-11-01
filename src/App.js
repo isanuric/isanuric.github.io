@@ -23,61 +23,66 @@ function App(location) {
         <Route
           path="/"
           render={({ location }) => (
-            // left tabs
-            <Box xs={12}>
-              <Tabs variant="scrollable" value={location.pathname}>
+            <>
+              <Box sx={{ display: { xs: "block", sm: "none" } }}>
                 <Dropdown />
-                <Box sx={{ flexGrow: 1 }}>
+              </Box>
+              <Box sx={{ display: { xs: "none", sm: "block" } }}>
+                <Tabs variant="scrollable" value={location.pathname}>
+                  {/* left tabs */}
+                  <Box sx={{ flexGrow: 1 }}>
+                    <Dropdown />
+                    <Tab
+                      sx={style.tab}
+                      xs={12}
+                      label="خانه"
+                      value="/"
+                      component={Link}
+                      to={allTabs[0]}
+                    />
+                    <Tab
+                      disabled
+                      sx={style.tab}
+                      label="تماس"
+                      value="/contact"
+                      component={Link}
+                      to={allTabs[0]}
+                    />
+                  </Box>
+
+                  {/* right tabs */}
                   <Tab
                     sx={style.tab}
-                    xs={12}
-                    label="خانه"
-                    value="/"
+                    label="کانت"
+                    value="/kant"
                     component={Link}
-                    to={allTabs[0]}
+                    to={allTabs[1]}
+                  />
+                  <Tab
+                    sx={style.tab}
+                    label="نیچه"
+                    value="/nietzsche"
+                    component={Link}
+                    to={allTabs[2]}
+                  />
+                  <Tab
+                    sx={style.tab}
+                    label="هایدگر"
+                    value="/heidegger"
+                    component={Link}
+                    to={allTabs[3]}
                   />
                   <Tab
                     disabled
                     sx={style.tab}
-                    label="تماس"
-                    value="/contact"
+                    value="/note"
+                    label="یادداشت‌ها"
                     component={Link}
-                    to={allTabs[0]}
+                    to={allTabs[4]}
                   />
-                </Box>
-
-                {/* right tabs */}
-                <Tab
-                  sx={style.tab}
-                  label="کانت"
-                  value="/kant"
-                  component={Link}
-                  to={allTabs[1]}
-                />
-                <Tab
-                  sx={style.tab}
-                  label="نیچه"
-                  value="/nietzsche"
-                  component={Link}
-                  to={allTabs[2]}
-                />
-                <Tab
-                  sx={style.tab}
-                  label="هایدگر"
-                  value="/heidegger"
-                  component={Link}
-                  to={allTabs[3]}
-                />
-                <Tab
-                  disabled
-                  sx={style.tab}
-                  value="/note"
-                  label="یادداشت‌ها"
-                  component={Link}
-                  to={allTabs[4]}
-                />
-              </Tabs>
-            </Box>
+                </Tabs>
+              </Box>
+            </>
           )}
         />
         <Switch>

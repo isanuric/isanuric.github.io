@@ -18,7 +18,7 @@ const style = {
     // bgcolor: "gray",
   },
   link: {
-    mr: 5,
+    m: 2,
   },
 };
 

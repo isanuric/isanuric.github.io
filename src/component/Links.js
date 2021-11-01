@@ -4,7 +4,7 @@ import React from "react";
 
 const style = {
   link: {
-    bgcolor: "gray",
+    bgcolor: "#424242",
     color: "white",
     fontSize: 14,
   },

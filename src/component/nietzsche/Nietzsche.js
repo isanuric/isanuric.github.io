@@ -24,8 +24,8 @@ function Nietzsche() {
     <div>
       <Typography className={classes.headTitle}>فردریش ویلهلم نیچه</Typography>
       <Grid container>
-        <Grid item xs={12} sm={3}></Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={2}></Grid>
+        <Grid item xs={12} sm={8}>
           <ContentAll data={Data} />
           <BottomLinks />
         </Grid>
