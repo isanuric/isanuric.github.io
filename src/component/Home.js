@@ -6,7 +6,6 @@ import {
   CardContent,
   CardMedia,
   Grid,
-  Typography,
 } from "@mui/material";
 import Link from "@mui/material/Link";
 import Footer from "./Footer";
@@ -33,7 +32,6 @@ function Home() {
       <Grid container>
         <Grid item xs={12} sm={2}></Grid>
         <Grid item xs={12} sm={4}>
-          {/* <Link href={"#/kant"} underline="none"> */}
           <Card sx={style.card}>
             <CardActionArea href={"#/kant"}>
               <CardMedia
@@ -45,7 +43,6 @@ function Home() {
               <CardContent sx={style.cardContent}>ایمانوئل کانت</CardContent>
             </CardActionArea>
           </Card>
-          {/* </Link> */}
         </Grid>
         {/* row 2 */}
         <Grid item xs={12} sm={4}>
@@ -58,7 +55,9 @@ function Home() {
                 image="https://upload.wikimedia.org/wikipedia/commons/5/53/Nietzsche_Olde_08.JPG"
                 alt="Nietzsche"
               />
-              <CardContent sx={style.cardContent}>فریدریش نیچه</CardContent>
+              <CardContent sx={style.cardContent}>
+                فردریش ویلهلم نیچه
+              </CardContent>
             </Card>
           </Link>
         </Grid>
@@ -76,7 +75,7 @@ function Home() {
                 image="https://static.dw.com/image/17615415_303.jpg"
                 alt="Heidegger"
               />
-              <CardContent sx={style.cardContent}>هایدگر</CardContent>
+              <CardContent sx={style.cardContent}>مارتین هایدگر</CardContent>
             </Card>
           </Link>
         </Grid>
