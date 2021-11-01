@@ -4,9 +4,11 @@ import Card from "@mui/material/Card";
 
 import React from "react";
 import { Box } from "@mui/system";
+import SimpleBottomNavigation from "./BottomNavigation";
 
 const style = {
   bottomLinks: {
+    height: 100,
     display: "flex",
     flexWrap: "wrap",
     // alignContent: "space-around",
@@ -33,6 +35,7 @@ function BottomLinks() {
       <Link href="#/" underline="none">
         <MenuItem>خانه</MenuItem>
       </Link>
+      {/* <SimpleBottomNavigation /> */}
     </Box>
   );
 }

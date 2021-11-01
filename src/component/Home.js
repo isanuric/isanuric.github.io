@@ -14,6 +14,7 @@ import { makeStyles } from "@mui/styles";
 // import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import Link from "@mui/material/Link";
 import Kant from "./kant/Kant";
+import Footer from "./Footer";
 
 const useStyles = makeStyles({
   card: {
@@ -72,6 +73,7 @@ function Home() {
           </Link>
         </Grid>
       </Grid>
+      <Footer />
     </div>
   );
 }

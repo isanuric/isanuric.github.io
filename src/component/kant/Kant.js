@@ -6,6 +6,7 @@ import { makeStyles } from "@mui/styles";
 
 import Data from "./Data";
 import BottomLinks from "../BottomLinks";
+import Footer from "../Footer";
 
 const useStyles = makeStyles({
   headTitle: {
@@ -32,6 +33,7 @@ function Kant() {
           <ContentAll data={Data} />
           <BottomLinks />
         </Grid>
+        <Footer />
       </Grid>
     </div>
   );

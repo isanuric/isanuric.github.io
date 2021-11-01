@@ -4,6 +4,7 @@ import Data from "./Data";
 import { Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import BottomLinks from "../BottomLinks";
+import Footer from "../Footer";
 
 const useStyles = makeStyles({
   headTitle: {
@@ -30,6 +31,7 @@ function Heidegger() {
           <BottomLinks />
         </Grid>
       </Grid>
+      <Footer />
     </div>
   );
 }
