@@ -21,20 +21,28 @@ const useStyles = makeStyles({
   },
 });
 
+// React.useEffect(() => {
+//   window.scrollTo(0, 0)
+// }
+
 function Kant() {
   const classes = useStyles();
+
   return (
-    <div>
-      <Typography className={classes.headTitle}>ایمانوئل کانت</Typography>
-      <Grid container>
-        <Grid item xs={0} sm={2}></Grid>
-        <Grid item xs={12} sm={8}>
-          <ContentAll data={Data} />
-          <BottomLinks />
+    window.scrollTo(0, 0),
+    (
+      <div>
+        <Typography className={classes.headTitle}>ایمانوئل کانت</Typography>
+        <Grid container>
+          <Grid item xs={0} sm={2}></Grid>
+          <Grid item xs={12} sm={8}>
+            <ContentAll data={Data} />
+            <BottomLinks />
+          </Grid>
+          <Footer />
         </Grid>
-        <Footer />
-      </Grid>
-    </div>
+      </div>
+    )
   );
 }
 

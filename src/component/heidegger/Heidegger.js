@@ -21,18 +21,20 @@ function Heidegger() {
   const classes = useStyles();
 
   return (
-    <div>
-      <Typography className={classes.headTitle}>مارتین هایدگر</Typography>
-
-      <Grid container>
-        <Grid item xs={12} sm={2}></Grid>
-        <Grid item xs={12} sm={8}>
-          <ContentAll data={Data} />
-          <BottomLinks />
+    window.scrollTo(0, 0),
+    (
+      <div>
+        <Typography className={classes.headTitle}>مارتین هایدگر</Typography>
+        <Grid container>
+          <Grid item xs={12} sm={2}></Grid>
+          <Grid item xs={12} sm={8}>
+            <ContentAll data={Data} />
+            <BottomLinks />
+          </Grid>
         </Grid>
-      </Grid>
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    )
   );
 }
 
