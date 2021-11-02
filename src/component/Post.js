@@ -39,7 +39,7 @@ function Post(props) {
         />
         <CardContent>
           <Typography gutterBottom align="right" component="div">
-            <h2>{props.title}</h2>
+            <h1>{props.title}</h1>
           </Typography>
           <Typography className={classes.subtitle}>احسان سلمانی</Typography>
 

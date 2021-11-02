@@ -3,7 +3,7 @@ import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 
-const useStyles = makeStyles({
+const style = {
   box: {
     backgroundImage: `url(
       "https://images.pexels.com/photos/3073700/pexels-photo-3073700.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -24,20 +24,32 @@ const useStyles = makeStyles({
   subtext: {
     color: "#ffe",
     fontSize: "1.5rem",
+    mt: 2,
   },
-});
+  citate: {
+    color: "#ffe",
+    fontSize: ".9rem",
+    fontStyle: "italic",
+    // textAlign: "center",
+    // fontFamily: "Monospace",
+    // m: 50,
+  },
+};
 
 function BlogPicture() {
-  const classes = useStyles();
-
   return (
     <div>
-      <Box className={classes.box}>
+      <Box sx={style.box}>
         <Box>
           در-جهان-هستن
-          <Typography className={classes.subtext}>
-            به قلم احسان سلمانی
+          <Typography sx={style.citate}>
+            Taking up relationships towards the world is possible only
+            <br />
+            because Dasein, as <b>Being-in-the-world</b>, is as it is.
+            <br />
+            (Martin Heidegger, Being and Time 12: 84)
           </Typography>
+          <Typography sx={style.subtext}>به قلم احسان سلمانی</Typography>
         </Box>
       </Box>
     </div>
