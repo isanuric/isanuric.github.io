@@ -38,6 +38,13 @@ export default function Footer() {
         <Box>
           <Link
             sx={style.link}
+            href="https://www.ub.uni-freiburg.de/fileadmin/ub/casts/audio/reden/016_heidegger.m4a"
+            target="_blank"
+          >
+            Martin Heidegger, Identität und Differenz (audio)
+          </Link>
+          <Link
+            sx={style.link}
             href="https://www.projekt-gutenberg.org/index.html"
             target="_blank"
           >
