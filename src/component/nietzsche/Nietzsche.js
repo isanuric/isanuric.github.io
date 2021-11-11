@@ -6,7 +6,7 @@ import { makeStyles } from "@mui/styles";
 import BottomLinks from "../BottomLinks";
 import Footer from "../Footer";
 
-const useStyles = makeStyles({
+const style = {
   headTitle: {
     marginTop: "3rem",
     height: "100px",
@@ -15,18 +15,25 @@ const useStyles = makeStyles({
     color: "gray",
     fontSize: "2rem",
   },
-});
+  subHeadTitle: {
+    display: "flex",
+    justifyContent: "center",
+    typography: "subtitle2",
+    fontWeight: "light",
+    fontStyle: "italic",
+  },
+};
 
 function Nietzsche() {
-  const classes = useStyles();
-
   return (
     window.scrollTo(0, 0),
     (
       <div>
-        <Typography className={classes.headTitle}>
-          فردریش ویلهلم نیچه
+        <Typography sx={style.headTitle}>فردریش ویلهلم نیچه</Typography>
+        <Typography sx={style.subHeadTitle}>
+          Der Mensch ist etwas, das überwunden werden muß.
         </Typography>
+        <Typography sx={style.subHeadTitle}>Friedrich Nietzsche</Typography>
         <Grid container>
           <Grid item xs={0} sm={0} md={2}></Grid>
           <Grid item xs={12} sm={12} md={8}>
