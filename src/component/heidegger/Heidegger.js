@@ -15,6 +15,13 @@ const style = {
     color: "gray",
     fontSize: "2rem",
   },
+  subHeadTitle: {
+    display: "flex",
+    justifyContent: "center",
+    typography: "subtitle2",
+    fontWeight: "light",
+    fontStyle: "italic",
+  },
 };
 
 function Heidegger() {
@@ -23,6 +30,10 @@ function Heidegger() {
     (
       <div>
         <Typography sx={style.headTitle}>مارتین هایدگر</Typography>
+        <Typography sx={style.subHeadTitle}>
+          In das, was Denken heißt, gelangen wir, wenn wir seIber denken.
+        </Typography>
+        <Typography sx={style.subHeadTitle}>Martin Heidegger</Typography>
         <Grid container>
           <Grid item xs={0} sm={0} md={2}></Grid>
           <Grid item xs={12} sm={12} md={8}>

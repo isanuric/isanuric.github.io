@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   typography: {
     direction: "rtl",
     align: "right",
-    fontSize: "1.4rem",
+    fontSize: "1.3rem",
   },
   subtitle: {
     direction: "rtl",
@@ -35,7 +35,7 @@ function Post(props) {
           component="img"
           height="260"
           image={props.image}
-          alt="green iguana"
+          // alt="green iguana"
         />
         <CardContent>
           <Typography gutterBottom align="right" component="div">
