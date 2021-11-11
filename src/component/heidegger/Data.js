@@ -2,7 +2,7 @@ export default [
   {
     id: "0000",
     image:
-      "http://portfolios.htwchur.ch/mmp16/baumgartner/wp-content/uploads/sites/39/2016/11/white-background-2-1200x703.jpg",
+      "https://images.freeimages.com/images/large-previews/c8e/books-1478715.jpg",
     title: "کوته‌نوشت‌ها",
     text: (
       <p dir="ltr">
