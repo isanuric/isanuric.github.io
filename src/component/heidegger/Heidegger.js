@@ -33,7 +33,9 @@ function Heidegger() {
         <Typography sx={style.subHeadTitle}>
           In das, was Denken heißt, gelangen wir, wenn wir seIber denken.
         </Typography>
-        <Typography sx={style.subHeadTitle}>Martin Heidegger</Typography>
+        <Typography sx={style.subHeadTitle}>
+          Martin Heidegger (WHD - 5)
+        </Typography>
         <Grid container>
           <Grid item xs={0} sm={0} md={2}></Grid>
           <Grid item xs={12} sm={12} md={8}>
