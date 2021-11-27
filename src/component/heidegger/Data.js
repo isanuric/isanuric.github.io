@@ -226,7 +226,8 @@ export default [
   },
   {
     id: "0004",
-    image: "",
+    image:
+      "https://images.freeimages.com/images/small-previews/ffe/italy-cathedral-039-1641949.jpg",
     title: "دازاین",
     text: (
       <p>
