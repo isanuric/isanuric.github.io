@@ -97,9 +97,9 @@ export default [
         ِ «هستی و زمان» دست به این نافرمانیِ فلسفی زده و با نگاهی فنومنولوژیک،
         معنای هستی را بازپرسش کند. ایده‌ی محوری او در کتاب ِ «هستی و زمان»، طرحِ
         «پرسش از معنای هستی» است و نه پاسخ‌گویی به این پرسشِ بنیادین.
-        <p>
+        <figure>
           <center>
-            <cite>
+            <blockquote>
               Die Erwägung der Vorurteile machte aber zugleich deutlich, daß
               nicht nur die Antwort fehlt auf die Frage nach dem Sein, sondern
               daß sogar die Frage selbst dunkel und richtungslos ist. (SuZ - §1)
@@ -107,9 +107,9 @@ export default [
               بررسی این پیش‌داوری‌ها [دلایلِ یک تا سه که در بالا بیان شد] در عین
               حال معلوم ساخت که نه فقط پرسش از هستی فاقد پاسخ است، بلکه حتا خودِ
               این پرسش نیز تاریک و فاقد جهت‌گیری است.
-            </cite>
+            </blockquote>
           </center>
-        </p>
+        </figure>
         حال برای آن‌که بتوانیم تجسمی کلّی از ساختارِ کتاب برای خود فراهم آوریم
         می‌بایستی آن را به دو بخشِ موضوعی تقسیم نماییم. بخشِ اول (فصل‌های یک و
         دو کتاب) «تحلیلِ بنیادیِ مقدماتیِ دازاین ‌- Vorbereitende
