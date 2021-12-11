@@ -7,23 +7,23 @@ export default [
     text: (
       <p dir="ltr">
         <cite>
-          <b>SuZ</b>: Heidegger, M., Sein und Zeit, Niemeyer Verlag Tübingen
-          1967 - هستی و زمان
+          <b>SuZ</b>: Heidegger, M., Sein und Zeit - هستی و زمان
         </cite>
         <br />
         <cite>
-          <b>WHD</b>: Heidegger, M., Was heisst Denken?, Niemeyer Verlag
-          Tübingen 1954 - معنای اندیشیدن چیست؟
+          <b>WHD</b>: Heidegger, M., Was heisst Denken? - معنای اندیشیدن چیست؟
         </cite>
         <br />
         <cite>
-          <b>MaD</b>: Safranski, R., Ein Meister aus Deutschland, Fischer
-          Taschenbuch 2001
+          <b>GdP</b>: Heidegger, M., Grundprobleme der Phänomenologie (1919/20)
         </cite>
         <br />
         <cite>
-          <b>LPB</b>: Ulfig, A., Lexikon der philosophischen Begriffe, Komet
-          Verlag Köln 1997
+          <b>MaD</b>: Safranski, R., Ein Meister aus Deutschland
+        </cite>
+        <br />
+        <cite>
+          <b>LPB</b>: Ulfig, A., Lexikon der philosophischen Begriffe
         </cite>
       </p>
     ),
