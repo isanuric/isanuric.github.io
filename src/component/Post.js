@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   typography: {
     direction: "rtl",
     align: "right",
-    fontSize: "1.3rem",
+    fontSize: "1.2rem",
   },
   subtitle: {
     direction: "rtl",
