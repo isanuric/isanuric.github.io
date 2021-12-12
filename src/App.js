@@ -6,6 +6,7 @@ import Home from "./component/Home";
 import Heidegger from "./component/heidegger/Heidegger";
 import Nietzsche from "./component/nietzsche/Nietzsche";
 import Kant from "./component/kant/Kant";
+import Notes from "./component/notes/Notes";
 import Dropdown from "./component/Dropdown";
 
 const style = {
@@ -15,7 +16,7 @@ const style = {
 };
 
 function App(location) {
-  const allTabs = ["/", "/kant", "/nietzsche", "/heidegger"];
+  const allTabs = ["/", "/heidegger", "/nietzsche", "/kant", "/notes"];
   return (
     <>
       <CssBaseline />
@@ -73,10 +74,10 @@ function App(location) {
                     to={allTabs[3]}
                   />
                   <Tab
-                    disabled
+                    // disabled
                     sx={style.tab}
-                    value="/note"
                     label="یادداشت‌ها"
+                    value="/notes"
                     component={Link}
                     to={allTabs[4]}
                   />
@@ -86,9 +87,10 @@ function App(location) {
           )}
         />
         <Switch>
-          <Route path={allTabs[3]} render={() => <Heidegger />} />
+          <Route path={allTabs[4]} render={() => <Notes />} />
+          <Route path={allTabs[3]} render={() => <Kant />} />
           <Route path={allTabs[2]} render={() => <Nietzsche />} />
-          <Route path={allTabs[1]} render={() => <Kant />} />
+          <Route path={allTabs[1]} render={() => <Heidegger />} />
           <Route path={allTabs[0]} render={() => <Home />} />
         </Switch>
       </HashRouter>

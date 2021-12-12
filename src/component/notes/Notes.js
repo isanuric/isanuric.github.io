@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
-import BlogPicture from "../BlogPicture";
 import ContentAll from "../ContentAll";
 import { makeStyles } from "@mui/styles";
 import Data from "./Data";
@@ -12,27 +11,20 @@ const useStyles = makeStyles({
     marginTop: "3rem",
     height: "100px",
     display: "flex",
-    // flexDirection: "column",
-    // justifyContent: "space-arownd",
     justifyContent: "center",
-    // alignItems: "center",
     color: "gray",
     fontSize: "2rem",
   },
 });
 
-// React.useEffect(() => {
-//   window.scrollTo(0, 0)
-// }
-
-function Kant() {
+function Notes() {
   const classes = useStyles();
 
   return (
     window.scrollTo(0, 0),
     (
       <div>
-        <Typography className={classes.headTitle}>ایمانوئل کانت</Typography>
+        <Typography className={classes.headTitle}>یادداشت‌ها</Typography>
         <Grid container>
           <Grid item xs={0} sm={0} md={2}></Grid>
           <Grid item xs={12} sm={12} md={8}>
@@ -46,4 +38,4 @@ function Kant() {
   );
 }
 
-export default Kant;
+export default Notes;

@@ -33,20 +33,21 @@ function Home() {
         <BlogPicture />
         <Grid container>
           <Grid item xs={12} sm={2}></Grid>
+
           <Grid item xs={12} sm={4}>
             <Card sx={style.card}>
-              <CardActionArea href={"#/kant"}>
+              <CardActionArea href={"#/heidegger"}>
                 <CardMedia
                   sx={style.cardMedia}
                   component="img"
-                  image="https://kant-online.ru/en/wp-content/uploads/2014/07/kant1.jpg"
-                  alt="Kant"
+                  image="https://static.dw.com/image/17615415_303.jpg"
+                  alt="Heidegger"
                 />
-                <CardContent sx={style.cardContent}>ایمانوئل کانت</CardContent>
+                <CardContent sx={style.cardContent}>هایدگر</CardContent>
               </CardActionArea>
             </Card>
           </Grid>
-          {/* row 2 */}
+
           <Grid item xs={12} sm={4}>
             <Link href={"#/nietzsche"} underline="none">
               <Card sx={style.card}>
@@ -64,21 +65,36 @@ function Home() {
           </Grid>
         </Grid>
 
+        {/* row 2 */}
         <Grid container>
           <Grid item xs={12} sm={2}></Grid>
+
           <Grid item xs={12} sm={4}>
-            <Link href={"#/heidegger"} underline="none">
-              <Card sx={style.card}>
+            <Card sx={style.card}>
+              <CardActionArea href={"#/kant"}>
                 <CardMedia
                   sx={style.cardMedia}
                   component="img"
-                  // height="140"
-                  image="https://static.dw.com/image/17615415_303.jpg"
-                  alt="Heidegger"
+                  image="https://upload.wikimedia.org/wikipedia/commons/c/cc/Immanuel_Kant_%28portrait%29.jpg"
+                  alt="Kant"
                 />
-                <CardContent sx={style.cardContent}>مارتین هایدگر</CardContent>
-              </Card>
-            </Link>
+                <CardContent sx={style.cardContent}>ایمانوئل کانت</CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={4}>
+            <Card sx={style.card}>
+              <CardActionArea href={"#/notes"}>
+                <CardMedia
+                  sx={style.cardMedia}
+                  component="img"
+                  image="https://static.vecteezy.com/system/resources/previews/001/874/132/non_2x/abstract-geometric-white-background-free-vector.jpg"
+                  alt="Kant"
+                />
+                <CardContent sx={style.cardContent}>یادداشت‌ها</CardContent>
+              </CardActionArea>
+            </Card>
           </Grid>
 
           <Box sx={{ mb: 100 }}></Box>
