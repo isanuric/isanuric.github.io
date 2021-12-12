@@ -57,9 +57,7 @@ function Home() {
                   image="https://upload.wikimedia.org/wikipedia/commons/5/53/Nietzsche_Olde_08.JPG"
                   alt="Nietzsche"
                 />
-                <CardContent sx={style.cardContent}>
-                  فردریش ویلهلم نیچه
-                </CardContent>
+                <CardContent sx={style.cardContent}>نیچه</CardContent>
               </Card>
             </Link>
           </Grid>
@@ -78,7 +76,7 @@ function Home() {
                   image="https://upload.wikimedia.org/wikipedia/commons/c/cc/Immanuel_Kant_%28portrait%29.jpg"
                   alt="Kant"
                 />
-                <CardContent sx={style.cardContent}>ایمانوئل کانت</CardContent>
+                <CardContent sx={style.cardContent}> کانت</CardContent>
               </CardActionArea>
             </Card>
           </Grid>
