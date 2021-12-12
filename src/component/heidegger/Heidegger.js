@@ -2,7 +2,6 @@ import React from "react";
 import ContentAll from "../ContentAll";
 import Data from "./Data";
 import { Grid, Typography } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import BottomLinks from "../BottomLinks";
 import Footer from "../Footer";
 
