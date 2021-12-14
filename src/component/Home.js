@@ -43,7 +43,7 @@ function Home() {
                   image="https://static.dw.com/image/17615415_303.jpg"
                   alt="Heidegger"
                 />
-                <CardContent sx={style.cardContent}>هایدگر</CardContent>
+                <CardContent sx={style.cardContent}>مارتین هایدگر</CardContent>
               </CardActionArea>
             </Card>
           </Grid>
@@ -57,7 +57,9 @@ function Home() {
                   image="https://upload.wikimedia.org/wikipedia/commons/5/53/Nietzsche_Olde_08.JPG"
                   alt="Nietzsche"
                 />
-                <CardContent sx={style.cardContent}>نیچه</CardContent>
+                <CardContent sx={style.cardContent}>
+                  فردریش ویلهلم نیچه
+                </CardContent>
               </Card>
             </Link>
           </Grid>
@@ -76,7 +78,7 @@ function Home() {
                   image="https://upload.wikimedia.org/wikipedia/commons/c/cc/Immanuel_Kant_%28portrait%29.jpg"
                   alt="Kant"
                 />
-                <CardContent sx={style.cardContent}> کانت</CardContent>
+                <CardContent sx={style.cardContent}>ایمانوئل کانت</CardContent>
               </CardActionArea>
             </Card>
           </Grid>
