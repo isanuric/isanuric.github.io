@@ -3,11 +3,15 @@ import { CssBaseline, Tab, Tabs } from "@mui/material";
 import { Route, Switch, Link, HashRouter } from "react-router-dom";
 import { Box } from "@mui/system";
 import Home from "./component/Home";
-import Heidegger from "./component/heidegger/Heidegger";
+import Heidegger01 from "./component/heidegger/Heidegger01";
+import Heidegger02 from "./component/heidegger/Heidegger02";
+import Heidegger03 from "./component/heidegger/Heidegger03";
+import Heidegger04 from "./component/heidegger/Text04";
 import Nietzsche from "./component/nietzsche/Nietzsche";
 import Kant from "./component/kant/Kant";
 import Notes from "./component/notes/Notes";
 import Dropdown from "./component/Dropdown";
+import HeideggerIndex from "./component/heidegger/HeideggerIndex";
 
 const style = {
   tab: {
@@ -69,7 +73,7 @@ function App(location) {
                   <Tab
                     sx={style.tab}
                     label="هایدگر"
-                    value="/heidegger"
+                    value="/heidegger01"
                     component={Link}
                     to={allTabs[3]}
                   />
@@ -87,10 +91,14 @@ function App(location) {
           )}
         />
         <Switch>
+          <Route path={allTabs[1]} render={() => <HeideggerIndex />} />
+          <Route path={"/heidegger01"} render={() => <Heidegger01 />} />
+          <Route path={"/heidegger02"} render={() => <Heidegger02 />} />
+          <Route path={"/heidegger03"} render={() => <Heidegger03 />} />
+          <Route path={"/heidegger04"} render={() => <Heidegger04 />} />
           <Route path={allTabs[4]} render={() => <Notes />} />
           <Route path={allTabs[3]} render={() => <Kant />} />
           <Route path={allTabs[2]} render={() => <Nietzsche />} />
-          <Route path={allTabs[1]} render={() => <Heidegger />} />
           <Route path={allTabs[0]} render={() => <Home />} />
         </Switch>
       </HashRouter>
