@@ -61,29 +61,29 @@ function App(location) {
                     label="کانت"
                     value="/kant"
                     component={Link}
-                    to={allTabs[1]}
+                    to={"/kant"}
                   />
                   <Tab
                     sx={style.tab}
                     label="نیچه"
                     value="/nietzsche"
                     component={Link}
-                    to={allTabs[2]}
+                    to={"/nietzsche"}
                   />
                   <Tab
                     sx={style.tab}
                     label="هایدگر"
-                    value="/heidegger01"
+                    value="/heidegger"
                     component={Link}
-                    to={allTabs[3]}
+                    to={"/heidegger"}
                   />
                   <Tab
                     // disabled
                     sx={style.tab}
-                    label="یادداشت‌ها"
+                    label="گزینه‌گویه‌ها"
                     value="/notes"
                     component={Link}
-                    to={allTabs[4]}
+                    to={"/notes"}
                   />
                 </Tabs>
               </Box>

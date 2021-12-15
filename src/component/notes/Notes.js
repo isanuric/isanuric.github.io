@@ -24,7 +24,7 @@ function Notes() {
     window.scrollTo(0, 0),
     (
       <div>
-        <Typography className={classes.headTitle}>یادداشت‌ها</Typography>
+        <Typography className={classes.headTitle}>گزینه‌گویه‌ها</Typography>
         <Grid container>
           <Grid item xs={0} sm={0} md={2}></Grid>
           <Grid item xs={12} sm={12} md={8}>

@@ -54,6 +54,9 @@ function Dropdown() {
         <Link href="#/heidegger" underline="none">
           <MenuItem onClick={handleClose}>هایدگر</MenuItem>
         </Link>
+        <Link href="#/notes" underline="none">
+          <MenuItem sx={style.link}>گزینه‌گویه‌ها</MenuItem>
+        </Link>
         <Link href="#/" underline="none">
           <MenuItem onClick={handleClose}>تماس</MenuItem>
         </Link>
