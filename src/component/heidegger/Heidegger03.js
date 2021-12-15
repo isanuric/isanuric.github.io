@@ -10,9 +10,9 @@ function Heidegger02() {
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Sein-und-Zeit-Hauptbegriffe.svg/1280px-Sein-und-Zeit-Hauptbegriffe.svg.png",
     title: (
       <>
-        هستی و زمان
+        تفاوت انتولوژیک
         <br />
-        Sein und Zeit
+        Ontologische Differenz
       </>
     ),
     text: (
