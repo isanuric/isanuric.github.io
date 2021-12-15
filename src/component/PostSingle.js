@@ -44,7 +44,7 @@ function PostSingle(props) {
         </CardContent>
         <CardActions>
           <Button href="#/heidegger" size="small">
-            <h2>بازگشت</h2>
+            <h3>بازگشت</h3>
           </Button>
         </CardActions>
       </Card>
