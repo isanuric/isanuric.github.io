@@ -93,7 +93,9 @@ function Home() {
                   image="https://static.vecteezy.com/system/resources/previews/001/874/132/non_2x/abstract-geometric-white-background-free-vector.jpg"
                   alt="Kant"
                 />
-                <CardContent sx={style.cardContent}>یادداشت‌ها</CardContent>
+                <CardContent sx={style.cardContent}>
+                  گزینه‌گویه‌هایی در راه
+                </CardContent>
               </CardActionArea>
             </Card>
           </Grid>
