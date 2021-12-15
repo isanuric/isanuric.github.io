@@ -11,21 +11,21 @@ import Link from "@mui/material/Link";
 import Footer from "./Footer";
 import { Box } from "@mui/system";
 
-const style = {
-  card: {
-    margin: 5,
-  },
-  cardMedia: {
-    maxHeight: 200,
-  },
-  cardContent: {
-    display: "flex",
-    justifyContent: "space-around",
-    fontSize: 26,
-  },
-};
-
 function Home() {
+  const style = {
+    card: {
+      margin: 5,
+    },
+    cardMedia: {
+      maxHeight: 200,
+    },
+    cardContent: {
+      display: "flex",
+      justifyContent: "space-around",
+      fontSize: 26,
+    },
+  };
+
   return (
     window.scrollTo(0, 0),
     (
