@@ -40,8 +40,9 @@ function Home() {
                 <CardMedia
                   sx={style.cardMedia}
                   component="img"
-                  image="https://static.dw.com/image/17615415_303.jpg"
-                  alt="Heidegger"
+                  // image="https://static.dw.com/image/17615415_303.jpg"
+                  image="https://ichi.pro/assets/images/max/724/0*-U9iMwWu7ze7AjHb.jpg"
+                  alt="Quelle: https://ichi.pro/assets/images/max/724/0*-U9iMwWu7ze7AjHb.jpg"
                 />
                 <CardContent sx={style.cardContent}>مارتین هایدگر</CardContent>
               </CardActionArea>
