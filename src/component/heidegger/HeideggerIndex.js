@@ -6,6 +6,7 @@ import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { Box } from "@mui/system";
+import BottomLinks from "../BottomLinks";
 
 function Home() {
   const style = {
@@ -125,7 +126,9 @@ function Home() {
           </Grid>
         </Container>
 
-        <Box sx={{ mb: 100 }}></Box>
+        <Box sx={{ mb: 50 }}></Box>
+        <BottomLinks />
+
         <Footer />
       </>
     )
