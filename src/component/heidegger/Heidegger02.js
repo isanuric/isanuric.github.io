@@ -68,7 +68,8 @@ function Heidegger02() {
             <cite>
               Die Erwägung der Vorurteile machte aber zugleich deutlich, daß
               nicht nur die Antwort fehlt auf die Frage nach dem Sein, sondern
-              daß sogar die Frage selbst dunkel und richtungslos ist. (SuZ - §1)
+              daß sogar die Frage selbst dunkel und richtungslos ist. (GA-2 -
+              §1)
               <br />
               بررسی این پیش‌داوری‌ها [دلایلِ یک تا سه که در بالا بیان شد] در عین
               حال معلوم ساخت که نه فقط پرسش از هستی فاقد پاسخ است، بلکه حتا خودِ

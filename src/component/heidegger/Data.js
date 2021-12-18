@@ -7,7 +7,7 @@ export default [
     text: (
       <p dir="ltr">
         <cite>
-          <b>SuZ</b>: Heidegger, M., Sein und Zeit - هستی و زمان
+          <b>GA-2</b>: Heidegger, M., Sein und Zeit - هستی و زمان
           <br />
         </cite>
         <cite>
@@ -15,7 +15,8 @@ export default [
           <br />
         </cite>
         <cite>
-          <b>GdP</b>: Heidegger, M., Grundprobleme der Phänomenologie (1919/20)
+          <b>GA-58</b>: Heidegger, M., Grundprobleme der Phänomenologie
+          (1919/20)
           <br />
         </cite>
         <cite>
@@ -39,7 +40,7 @@ export default [
         که به فراموشی سپرده شده است. پرسشی پیشا سقراطی، پیشا افلاطونی، پیشا
         ارسطویی. پرسشی پارمیدسی. اما این فراموشی، نه از جنسِ فراموشی‌هایِ آنی،
         که فراموشی‌ای به درازنایِ تاریخِ اندیشیدن است. به فراخنای سقراط تا هگل
-        (SuZ - §1).
+        (GA-2 - §1).
         <p></p>
         پرسشی که زمانی تاجِ زرّینِ اندیشیدن بود و در دورانِ پیش از سقراط، قدر
         می‌دید و بر صدر می نشست، دیربازی‌ست که به فراموشی سپرده شده و به موضوعی
@@ -153,7 +154,8 @@ export default [
             <cite>
               Die Erwägung der Vorurteile machte aber zugleich deutlich, daß
               nicht nur die Antwort fehlt auf die Frage nach dem Sein, sondern
-              daß sogar die Frage selbst dunkel und richtungslos ist. (SuZ - §1)
+              daß sogar die Frage selbst dunkel und richtungslos ist. (GA-2 -
+              §1)
               <br />
               بررسی این پیش‌داوری‌ها [دلایلِ یک تا سه که در بالا بیان شد] در عین
               حال معلوم ساخت که نه فقط پرسش از هستی فاقد پاسخ است، بلکه حتا خودِ
@@ -303,7 +305,7 @@ export default [
             <cite>
               Dieses Seiende, das wir selbst je sind und das unter anderem die
               Seinsmöglichkeit des Fragens hat, fassen wir terminologisch als
-              Dasein. (SuZ - §2)
+              Dasein. (GA-2 - §2)
               <br />
               این هستنده که خودِ ماییم و علاوه بر چیزهای دیگر از امکانِ‌وجودیِ
               پرسیدن برخوردار است را با اصطلاح دازاین مشخص می‌کنیم.

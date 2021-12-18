@@ -36,7 +36,7 @@ function Text() {
             <cite>
               Dieses Seiende, das wir selbst je sind und das unter anderem die
               Seinsmöglichkeit des Fragens hat, fassen wir terminologisch als
-              Dasein. (SuZ - §2)
+              Dasein. (GA-2 - §2)
               <br />
               این هستنده که خودِ ماییم و علاوه بر چیزهای دیگر از امکانِ‌وجودیِ
               پرسیدن برخوردار است را با اصطلاح دازاین مشخص می‌کنیم.
