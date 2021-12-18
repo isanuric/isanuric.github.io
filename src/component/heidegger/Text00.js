@@ -30,7 +30,7 @@ function Text() {
           >
             Gesamtausgabe
           </a>
-          &nbsp; که به اختصار GA نامیده می‌شود.
+          &nbsp; است که به اختصار GA نامیده می‌شود.
         </p>
         <Typography variant="body2" style={{ whiteSpace: "pre-line" }}>
           <br />
@@ -67,19 +67,20 @@ function Text() {
           GA-11. Identität und Differenz (1955–1957), ed. F.-W. von Herrmann,
           2nd edn. 2006, 168p.
           <br />
-          GA-12 Unterwegs zur Sprache (1950–1959), ed. F.-W. von Herrmann, 1985,
-          262p.
+          GA-12. Unterwegs zur Sprache (1950–1959), ed. F.-W. von Herrmann,
+          1985, 262p.
           <br />
-          GA-13 Aus der Erfahrung des Denkens (1910–1976), ed. H. Heidegger,
+          GA-13. Aus der Erfahrung des Denkens (1910–1976), ed. H. Heidegger,
           1983, 2nd edn. 2002, VIII, 254p.
           <br />
-          GA-14 Zur Sache des Denkens (1962–1964), ed. F.-W. von Herrmann, 2007,
-          156p.
+          GA-14. Zur Sache des Denkens (1962–1964), ed. F.-W. von Herrmann,
+          2007, 156p.
           <br />
-          GA-15 Seminare (1951–1973), ed. C. Ochwadt, 1986, 2nd edn. 2005, 448p.
+          GA-15. Seminare (1951–1973), ed. C. Ochwadt, 1986, 2nd edn. 2005,
+          448p.
           <br />
-          GA-16 Reden und andere Zeugnisse eines Lebensweges (1910–1976), ed. H.
-          Heidegger, 2000, XXII, 842p.
+          GA-16. Reden und andere Zeugnisse eines Lebensweges (1910–1976), ed.
+          H. Heidegger, 2000, XXII, 842p.
           <br />
           GA-17. Einführung in die phänomenologische Forschung (Winter semester
           1923/24), ed. F.-W. von Herrmann, 1994, 2nd edn. 2006, XIV, 332p.
@@ -193,6 +194,26 @@ function Text() {
           2nd edn. 1992, XII, 252p.
           <br />
           GA-55. Heraklit
+          <br />
+          GA-56/57. Zur Bestimmung der Philosophie. 1999, X, 226p.
+          <br />
+          GA-58. Grundprobleme der Phänomenologie (Winter semester 1919/20), ed.
+          H.-H. Gander, 1992, X, 274p.
+          <br />
+          GA-59. Phänomenologie der Anschauung und des Ausdrucks. Theorie der
+          philosophischen Begriffsbildung (Summer semester 1920), ed. C.Strube,
+          1993, VIII, 202p.
+          <br />
+          GA-60. Phänomenologie des religiösen Lebens.
+          <br />
+          GA-61. Phänomenologische Interpretationen zu Aristoteles. Einführung
+          in die phänomenologische Forschung (Winter semester 1921/22)
+          <br />
+          GA-62. Phänomenologische Interpretation ausgewählter Abhandlungen des
+          Aristoteles zu Ontologie und Logik (Summer semester 1922).
+          <br />
+          GA-63. Ontologie. Hermeneutik der Faktizität (Summer semester 1923),
+          ed. K. Bröcker-Oltmanns, 1988, 2nd edn. 1995, XII, 116p.
         </Typography>
 
         <cite>
