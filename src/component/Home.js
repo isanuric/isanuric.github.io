@@ -90,7 +90,8 @@ function Home() {
                 <CardMedia
                   sx={style.cardMedia}
                   component="img"
-                  image="https://static.vecteezy.com/system/resources/previews/001/874/132/non_2x/abstract-geometric-white-background-free-vector.jpg"
+                  // image="https://static.vecteezy.com/system/resources/previews/001/874/132/non_2x/abstract-geometric-white-background-free-vector.jpg"
+                  image="https://images.pexels.com/photos/8271921/pexels-photo-8271921.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
                   alt="Kant"
                 />
                 <CardContent sx={style.cardContent}>

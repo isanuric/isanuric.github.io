@@ -4,7 +4,7 @@ export default [
   {
     id: "0001",
     image:
-      "https://static.vecteezy.com/system/resources/previews/001/874/132/non_2x/abstract-geometric-white-background-free-vector.jpg",
+      "https://images.pexels.com/photos/8271921/pexels-photo-8271921.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
     title: "گزینه‌گویه‌هایی در راه",
     text: (
       <p>
