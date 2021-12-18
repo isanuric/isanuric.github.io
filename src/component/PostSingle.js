@@ -27,7 +27,6 @@ const useStyles = makeStyles({
 
 function PostSingle(props) {
   const classes = useStyles();
-  const cardd = props.props;
 
   return (
     <>
