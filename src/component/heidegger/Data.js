@@ -11,7 +11,7 @@ export default [
           <br />
         </cite>
         <cite>
-          <b>WHD</b>: Heidegger, M., Was heisst Denken? - معنای اندیشیدن چیست؟
+          <b>GA-08</b>: Heidegger, M., Was heisst Denken? - معنای اندیشیدن چیست؟
           <br />
         </cite>
         <cite>

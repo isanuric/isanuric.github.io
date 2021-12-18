@@ -3,6 +3,7 @@ import { CssBaseline, Tab, Tabs } from "@mui/material";
 import { Route, Switch, Link, HashRouter } from "react-router-dom";
 import { Box } from "@mui/system";
 import Home from "./component/Home";
+import Heidegger00 from "./component/heidegger/Text00";
 import Heidegger01 from "./component/heidegger/Heidegger01";
 import Heidegger02 from "./component/heidegger/Heidegger02";
 import Heidegger03 from "./component/heidegger/Heidegger03";
@@ -92,6 +93,7 @@ function App(location) {
         />
         <Switch>
           <Route path={allTabs[1]} render={() => <HeideggerIndex />} />
+          <Route path={"/heidegger00"} render={() => <Heidegger00 />} />
           <Route path={"/heidegger01"} render={() => <Heidegger01 />} />
           <Route path={"/heidegger02"} render={() => <Heidegger02 />} />
           <Route path={"/heidegger03"} render={() => <Heidegger03 />} />

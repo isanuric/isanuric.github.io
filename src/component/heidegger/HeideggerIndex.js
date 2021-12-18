@@ -48,6 +48,12 @@ function Home() {
   const cards = [
     {
       image:
+        "https://images.pexels.com/photos/10404272/pexels-photo-10404272.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      title: <p> منبع‌ها و کوته‌نوشت‌ها</p>,
+      href: "#/heidegger00",
+    },
+    {
+      image:
         "https://images.pexels.com/photos/9979101/pexels-photo-9979101.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       title: <p>درآمدی بر هایدگر</p>,
       href: "#/heidegger01",
@@ -98,8 +104,9 @@ function Home() {
           In das, was Denken heißt, gelangen wir, wenn wir seIber denken.
         </Typography>
         <Typography sx={style.subHeadTitle}>
-          Martin Heidegger (WHD - 5)
+          Martin Heidegger (GA-08 - 5)
         </Typography>
+
         <Container sx={{ py: 8, direction: "rtl" }} maxWidth="md">
           <Grid container spacing={4}>
             {cards.map((card) => (
@@ -111,7 +118,7 @@ function Home() {
                     image={card.image}
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography gutterBottom variant="h5" component="h1">
                       {card.title}
                     </Typography>
                   </CardContent>

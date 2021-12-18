@@ -34,7 +34,7 @@
 //           Heidegger2
 //         </Typography>
 //         <Typography sx={style.subHeadTitle}>
-//           Martin Heidegger (WHD - 5)
+//           Martin Heidegger (GA-08 - 5)
 //         </Typography>
 //         <Grid container>
 //           <Grid item xs={0} sm={0} md={2}></Grid>
