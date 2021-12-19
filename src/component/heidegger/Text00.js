@@ -315,6 +315,9 @@ function Text() {
         <br />
         <b>Other Refrences:</b>
         <br />
+        AGG: Jaeger, W., Aristoteles; Grundlegung einer Geschichte seiner
+        Entwicklung, Berlin Weidmannsche Buchhandlung 1923
+        <br />
         PdA: Brentano, F., Psychologie des Aristoteles, Mainz , Verlag von Franz
         Kirchheim. 1867
         <br />
