@@ -33,6 +33,8 @@ function Text() {
           &nbsp; است که به اختصار GA نامیده می‌شود.
         </p>
         <br />
+        <b>Heidegger Gesamtausgabe:</b>
+        <br />
         GA-1. Frühe Schriften (1912–1916), ed. F.-W. von Herrmann, 1978, XII,
         454p.
         <br />
@@ -308,7 +310,13 @@ function Text() {
         <br />
         GA-102. Vorläufiges I-IV. (Schwarze Hefte 1963 -1970), edited Peter
         Trawny, (Nov 2021), 448p. ISBN-13: 978-3465026907.
+        {/*  */}
         <br />
+        <br />
+        <b>Other Refrences:</b>
+        <br />
+        PdA: Brentano, F., Psychologie des Aristoteles, Mainz , Verlag von Franz
+        Kirchheim. 1867
         <br />
         MaD: Safranski, R., Ein Meister aus Deutschland
         <br />
