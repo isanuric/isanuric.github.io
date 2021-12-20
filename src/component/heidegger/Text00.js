@@ -315,6 +315,9 @@ function Text() {
         <br />
         <b>Other Refrences:</b>
         <br />
+        HHH: Gadamer, H.G., Gesammelte Werke, Bd.3, Neuere Philosophie - 1.
+        Hegel, Husserl, Heidegger. Mohr Siebeck; 1. Edition (1. Januar 1987)
+        <br />
         AGG: Jaeger, W., Aristoteles; Grundlegung einer Geschichte seiner
         Entwicklung, Berlin Weidmannsche Buchhandlung 1923
         <br />
