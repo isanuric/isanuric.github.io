@@ -318,7 +318,7 @@ function Text() {
         AGG: Jaeger, W., Aristoteles; Grundlegung einer Geschichte seiner
         Entwicklung, Berlin Weidmannsche Buchhandlung 1923
         <br />
-        Jaeger, Studien zur Entstehungsgeschichte der Metaphysik des
+        SMA: Jaeger, Studien zur Entstehungsgeschichte der Metaphysik des
         Aristoteles, Berlin Weidmannsche Buchhandlung 1912
         <br />
         PdA: Brentano, F., Psychologie des Aristoteles, Mainz , Verlag von Franz
