@@ -42,7 +42,6 @@ function Post(props) {
             <h1>{props.title}</h1>
           </Typography>
           <Typography className={classes.subtitle}>احسان سلمانی</Typography>
-
           {/* <Typography sx={{ fontSize: "1.2rem" }}>{props.text}</Typography> */}
           <Typography className={classes.typography}>{props.text}</Typography>
         </CardContent>
