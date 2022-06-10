@@ -4,6 +4,8 @@ import Footer from "./Footer";
 
 import HomeLinks from "./HomeLinks";
 
+import BlogPicture from "./BlogPicture";
+
 function Home() {
   const style = {
     gridContainer: {
@@ -35,6 +37,8 @@ function Home() {
     window.scrollTo(0, 0),
     (
       <div>
+        <BlogPicture />
+
         <Grid container xs={12} sm={12} sx={style.gridContainer}>
           <Grid container xs={12} sm={6}>
             {authors.map((author) => (
