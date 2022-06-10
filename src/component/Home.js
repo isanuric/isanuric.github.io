@@ -83,4 +83,11 @@ export const authors = [
     href: "#/notes",
     text: "گزینه‌گویه‌ها",
   },
+  {
+    image:
+      "https://static.vecteezy.com/system/resources/previews/001/874/132/non_2x/abstract-geometric-white-background-free-vector.jpg",
+    alt: "Poems",
+    href: "#/poems",
+    text: "شعرها",
+  },
 ];

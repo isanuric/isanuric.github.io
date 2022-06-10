@@ -35,7 +35,7 @@ export default function HomeLinks(props) {
           sx={style.cardMedia}
           component="img"
           image={props.author.image}
-          alt="Kant"
+          alt={props.author.alt}
         />
         <CardContent sx={style.cardContent}>{props.author.text}</CardContent>
       </CardActionArea>

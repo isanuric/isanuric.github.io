@@ -13,6 +13,7 @@ import Kant from "./component/kant/Kant";
 import Notes from "./component/notes/Notes";
 import Dropdown from "./component/Dropdown";
 import HeideggerIndex from "./component/heidegger/HeideggerIndex";
+import Poems from "./component/poems/Poems";
 
 const style = {
   tab: {
@@ -21,7 +22,14 @@ const style = {
 };
 
 function App(location) {
-  const allTabs = ["/", "/heidegger", "/nietzsche", "/kant", "/notes"];
+  const allTabs = [
+    "/",
+    "/heidegger",
+    "/nietzsche",
+    "/kant",
+    "/notes",
+    "/poems",
+  ];
   return (
     <>
       <CssBaseline />
@@ -103,6 +111,7 @@ function App(location) {
           <Route path={"/heidegger02"} render={() => <Heidegger02 />} />
           <Route path={"/heidegger03"} render={() => <Heidegger03 />} />
           <Route path={"/heidegger04"} render={() => <Heidegger04 />} />
+          <Route path={allTabs[5]} render={() => <Poems />} />
           <Route path={allTabs[4]} render={() => <Notes />} />
           <Route path={allTabs[3]} render={() => <Kant />} />
           <Route path={allTabs[2]} render={() => <Nietzsche />} />
