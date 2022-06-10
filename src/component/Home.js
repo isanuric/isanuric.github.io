@@ -1,23 +1,28 @@
 import React from "react";
-import BlogPicture from "./BlogPicture";
-import {
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia,
-  Grid,
-} from "@mui/material";
-import Link from "@mui/material/Link";
+import { Grid } from "@mui/material";
 import Footer from "./Footer";
-import { Box } from "@mui/system";
+
+import HomeLinks from "./HomeLinks";
 
 function Home() {
   const style = {
+    gridContainer: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      mt: "25rem",
+      mb: "25rem",
+      // backgroundColor: "red",
+    },
     card: {
-      margin: 5,
+      margin: 0,
+
+      "&:hover": {
+        opacity: [0.1, 0.5, 0.5],
+      },
     },
     cardMedia: {
-      maxHeight: 200,
+      height: 400,
     },
     cardContent: {
       display: "flex",
@@ -30,79 +35,14 @@ function Home() {
     window.scrollTo(0, 0),
     (
       <div>
-        <BlogPicture />
-        <Grid container>
-          <Grid item xs={12} sm={2}></Grid>
-
-          <Grid item xs={12} sm={4}>
-            <Card sx={style.card}>
-              <CardActionArea href={"#/heidegger"}>
-                <CardMedia
-                  sx={style.cardMedia}
-                  component="img"
-                  // image="https://static.dw.com/image/17615415_303.jpg"
-                  image="https://ichi.pro/assets/images/max/724/0*-U9iMwWu7ze7AjHb.jpg"
-                  alt="Quelle: https://ichi.pro/assets/images/max/724/0*-U9iMwWu7ze7AjHb.jpg"
-                />
-                <CardContent sx={style.cardContent}>مارتین هایدگر</CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-
-          <Grid item xs={12} sm={4}>
-            <Link href={"#/nietzsche"} underline="none">
-              <Card sx={style.card}>
-                <CardMedia
-                  sx={style.cardMedia}
-                  component="img"
-                  image="https://upload.wikimedia.org/wikipedia/commons/5/53/Nietzsche_Olde_08.JPG"
-                  alt="Nietzsche"
-                />
-                <CardContent sx={style.cardContent}>
-                  فردریش ویلهلم نیچه
-                </CardContent>
-              </Card>
-            </Link>
+        <Grid container xs={12} sm={12} sx={style.gridContainer}>
+          <Grid container xs={12} sm={6}>
+            {authors.map((author) => (
+              <HomeLinks author={author} />
+            ))}
           </Grid>
         </Grid>
 
-        {/* row 2 */}
-        <Grid container>
-          <Grid item xs={12} sm={2}></Grid>
-
-          <Grid item xs={12} sm={4}>
-            <Card sx={style.card}>
-              <CardActionArea href={"#/kant"}>
-                <CardMedia
-                  sx={style.cardMedia}
-                  component="img"
-                  image="https://upload.wikimedia.org/wikipedia/commons/c/cc/Immanuel_Kant_%28portrait%29.jpg"
-                  alt="Kant"
-                />
-                <CardContent sx={style.cardContent}>ایمانوئل کانت</CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-
-          <Grid item xs={12} sm={4}>
-            <Card sx={style.card}>
-              <CardActionArea href={"#/notes"}>
-                <CardMedia
-                  sx={style.cardMedia}
-                  component="img"
-                  // image="https://static.vecteezy.com/system/resources/previews/001/874/132/non_2x/abstract-geometric-white-background-free-vector.jpg"
-                  image="https://images.pexels.com/photos/8271921/pexels-photo-8271921.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-                  alt="Kant"
-                />
-                <CardContent sx={style.cardContent}>
-                  گزینه‌گویه‌هایی در راه
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-
-          <Box sx={{ mb: 100 }}></Box>
-        </Grid>
         <Footer />
       </div>
     )
@@ -110,3 +50,33 @@ function Home() {
 }
 
 export default Home;
+
+export const authors = [
+  {
+    image: "https://ichi.pro/assets/images/max/724/0*-U9iMwWu7ze7AjHb.jpg",
+    alt: "Quelle: https://ichi.pro/assets/images/max/724/0*-U9iMwWu7ze7AjHb.jpg",
+    href: "#/heidegger",
+    text: "هایدگر",
+  },
+  {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/5/53/Nietzsche_Olde_08.JPG",
+    alt: "Nietzsche",
+    href: "#/nietzsche",
+    text: "فردریش ویلهلم نیچه",
+  },
+  {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/c/cc/Immanuel_Kant_%28portrait%29.jpg",
+    alt: "Kant",
+    href: "#/kant",
+    text: "ایمانوئل کانت",
+  },
+  {
+    image:
+      "https://static.vecteezy.com/system/resources/previews/001/874/132/non_2x/abstract-geometric-white-background-free-vector.jpg",
+    alt: "Kant",
+    href: "#/notes",
+    text: "گزینه‌گویه‌ها",
+  },
+];

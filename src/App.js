@@ -13,6 +13,7 @@ import Kant from "./component/kant/Kant";
 import Notes from "./component/notes/Notes";
 import Dropdown from "./component/Dropdown";
 import HeideggerIndex from "./component/heidegger/HeideggerIndex";
+import BlogPicture from "./component/BlogPicture";
 
 const style = {
   tab: {
@@ -30,10 +31,17 @@ function App(location) {
           path="/"
           render={({ location }) => (
             <>
+              <BlogPicture />
+
               <Box sx={{ display: { xs: "block", sm: "none" } }}>
                 <Dropdown />
               </Box>
-              <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              <Box
+                sx={{
+                  display: { xs: "none", sm: "block" },
+                  backgroundColor: "#bdbdbd",
+                }}
+              >
                 <Tabs variant="scrollable" value={location.pathname}>
                   {/* left tabs */}
                   <Box sx={{ flexGrow: 1 }}>
