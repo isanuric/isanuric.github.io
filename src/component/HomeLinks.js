@@ -9,7 +9,7 @@ const style = {
     "&:hover": {
       // cursor: "pointer",
       // backgroundColor: "primary.main",
-      opacity: [0.1, 0.5, 0.5],
+      opacity: [0.9, 0.9, 1],
       // border: 35,
       // borderColor: "text.primary",
       // borderRadius: "5%",
@@ -17,8 +17,9 @@ const style = {
   },
   cardMedia: {
     // maxHeight: 300,
-    width: 400,
-    height: 500,
+    // maxWidth: { xs: 300, sm: 400 },
+    width: { xs: 300, sm: 400 },
+    height: { xs: 400, sm: 500 },
   },
   cardContent: {
     display: "flex",

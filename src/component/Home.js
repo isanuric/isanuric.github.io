@@ -14,22 +14,7 @@ function Home() {
       justifyContent: "center",
       mt: "25rem",
       mb: "25rem",
-      // backgroundColor: "red",
-    },
-    card: {
-      margin: 0,
-
-      "&:hover": {
-        opacity: [0.1, 0.5, 0.5],
-      },
-    },
-    cardMedia: {
-      height: 400,
-    },
-    cardContent: {
-      display: "flex",
-      justifyContent: "space-around",
-      fontSize: 26,
+      backgroundColor: "red",
     },
   };
 
@@ -40,7 +25,7 @@ function Home() {
         <BlogPicture />
 
         <Grid container xs={12} sm={12} sx={style.gridContainer}>
-          <Grid container xs={12} sm={6}>
+          <Grid container xs={6} sm={6}>
             {authors.map((author) => (
               <HomeLinks author={author} />
             ))}
