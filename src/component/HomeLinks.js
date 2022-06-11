@@ -4,22 +4,35 @@ import { authors } from "./Home";
 
 const style = {
   card: {
-    margin: 0,
+    margin: 1,
+    width: { xs: "auto", sm: 400 },
+    // width: "90%",
+    // height: 470,
+    // minWidth: 370,
+
+    // maxWidth: 370,
+    // maxHeight: 470,
 
     "&:hover": {
       // cursor: "pointer",
-      // backgroundColor: "primary.main",
+      backgroundColor: "#9e9e9e",
       opacity: [0.9, 0.9, 1],
       // border: 35,
-      // borderColor: "text.primary",
+      // borderColor: "#9e9e9e",
       // borderRadius: "5%",
+      // width: { xs: "360px", sm: "400px" },
+      // height: { xs: "360", sm: "500px" },
     },
   },
   cardMedia: {
+    // width: "90%",
+    // height: 370,
     // maxHeight: 300,
     // maxWidth: { xs: 300, sm: 400 },
-    width: { xs: 300, sm: 400 },
-    height: { xs: 400, sm: 500 },
+    // height: { xs: "400px", sm: "500px" },
+    // width: { xs: "150px", sm: "400px" },
+    // width: { xs: "360px", sm: "400px" },
+    // height: { xs: "360", sm: "500px" },
   },
   cardContent: {
     display: "flex",
@@ -33,9 +46,9 @@ export default function HomeLinks(props) {
     <Card sx={style.card}>
       <CardActionArea href={props.author.href}>
         <CardMedia
-          sx={style.cardMedia}
           component="img"
-          image={props.author.image}
+          sx={style.cardMedia}
+          image={props.author.img}
           alt={props.author.alt}
         />
         <CardContent sx={style.cardContent}>{props.author.text}</CardContent>

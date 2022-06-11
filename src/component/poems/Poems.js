@@ -49,6 +49,8 @@ export default function Poems() {
             {data.map((data) => (
               <Post {...data} />
             ))}
+
+            <BottomLinks />
           </Grid>
           <Grid item xs={0} sm={2} sx={{}} />
 

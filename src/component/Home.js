@@ -14,7 +14,6 @@ function Home() {
       justifyContent: "center",
       mt: "25rem",
       mb: "25rem",
-      backgroundColor: "red",
     },
   };
 
@@ -25,7 +24,7 @@ function Home() {
         <BlogPicture />
 
         <Grid container xs={12} sm={12} sx={style.gridContainer}>
-          <Grid container xs={6} sm={6}>
+          <Grid container xs={10} sm={6}>
             {authors.map((author) => (
               <HomeLinks author={author} />
             ))}
@@ -42,35 +41,30 @@ export default Home;
 
 export const authors = [
   {
-    image: "https://ichi.pro/assets/images/max/724/0*-U9iMwWu7ze7AjHb.jpg",
-    alt: "Quelle: https://ichi.pro/assets/images/max/724/0*-U9iMwWu7ze7AjHb.jpg",
+    img: require("../images/heidegger.jpg").default,
     href: "#/heidegger",
     text: "هایدگر",
   },
   {
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/5/53/Nietzsche_Olde_08.JPG",
+    img: require("../images/nietzsche.jpg").default,
     alt: "Nietzsche",
     href: "#/nietzsche",
     text: "فردریش ویلهلم نیچه",
   },
   {
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/c/cc/Immanuel_Kant_%28portrait%29.jpg",
+    img: require("../images/kant.jpg").default,
     alt: "Kant",
     href: "#/kant",
     text: "ایمانوئل کانت",
   },
   {
-    image:
-      "https://static.vecteezy.com/system/resources/previews/001/874/132/non_2x/abstract-geometric-white-background-free-vector.jpg",
-    alt: "Kant",
+    img: require("../images/abstract01.jpg").default,
+    alt: "",
     href: "#/notes",
     text: "گزینه‌گویه‌ها",
   },
   {
-    image:
-      "https://static.vecteezy.com/system/resources/previews/001/874/132/non_2x/abstract-geometric-white-background-free-vector.jpg",
+    img: require("../images/abstract02.jpg").default,
     alt: "Poems",
     href: "#/poems",
     text: "شعرها",
