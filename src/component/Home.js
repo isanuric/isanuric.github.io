@@ -12,8 +12,15 @@ function Home() {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      mt: "25rem",
-      mb: "25rem",
+      mt: "5rem",
+      mb: "15rem",
+    },
+    gridContainerInner: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      // mt: "25rem",
+      // mb: "25rem",
     },
   };
 
@@ -24,7 +31,7 @@ function Home() {
         <BlogPicture />
 
         <Grid container xs={12} sm={12} sx={style.gridContainer}>
-          <Grid container xs={10} sm={6}>
+          <Grid container xs={10} sm={10} sx={style.gridContainer}>
             {authors.map((author) => (
               <HomeLinks author={author} />
             ))}

@@ -5,7 +5,8 @@ import { authors } from "./Home";
 const style = {
   card: {
     margin: 1,
-    width: { xs: "auto", sm: 400 },
+    width: { xs: "auto", sm: "400px" },
+
     // width: "90%",
     // height: 470,
     // minWidth: 370,

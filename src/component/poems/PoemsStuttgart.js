@@ -1,9 +1,7 @@
 import React from "react";
-import { Grid, Typography, Box } from "@mui/material";
-import ContentAll from "../ContentAll";
+import { Grid, Typography } from "@mui/material";
 import { data } from "./Data";
 import BottomLinks from "../BottomLinks";
-import Footer from "../Footer";
 import Post from "./Post";
 
 const style = {
@@ -12,7 +10,6 @@ const style = {
     alignItems: "center",
     justifyContent: "center",
     pt: "15rem",
-    // mb: "25rem",
     backgroundColor: "#212121",
   },
   gridItem: {
@@ -20,12 +17,10 @@ const style = {
   },
   headTitle: {
     mt: "3rem",
-    // height: "100px",
     display: "flex",
     justifyContent: "center",
     color: "gray",
     fontSize: "2rem",
-    // backgroundColor: "blue",
   },
   subTitle: {
     pb: "15rem",

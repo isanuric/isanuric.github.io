@@ -49,7 +49,6 @@ export default function Poems() {
       <>
         <PoemsBerlin />
         <PoemsStuttgart />
-        {/* <BottomLinks /> */}
         <Footer />
       </>
     )
