@@ -5,6 +5,8 @@ import { data } from "./Data";
 import BottomLinks from "../BottomLinks";
 import Footer from "../Footer";
 import Post from "./Post";
+import PoemsBerlin from "./PoemsBerlin";
+import PoemsStuttgart from "./PoemsStuttgart";
 
 const style = {
   gridContainer: {
@@ -13,7 +15,15 @@ const style = {
     justifyContent: "center",
     // mt: "25rem",
     // mb: "25rem",
-    // backgroundColor: "blue",
+    backgroundColor: "blue",
+  },
+  gridContainerStuttgart: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    // mt: "25rem",
+    // mb: "25rem",
+    backgroundColor: "red",
   },
   gridItem: {
     m: "3rem",
@@ -36,27 +46,12 @@ export default function Poems() {
   return (
     window.scrollTo(0, 0),
     (
-      <Grid container xs={12} sm={12} sx={style.gridContainer}>
-        <Grid item xs={12} sm={12}>
-          <Typography sx={style.headTitle}>شعرها</Typography>
-        </Grid>
-        <Typography sx={style.subTitle}>به قلم احسان سلمانی</Typography>
-
-        <Grid container>
-          <Grid item xs={1} sm={2} sx={{}} />
-
-          <Grid item xs={10} sm={8} sx={{}}>
-            {data.map((data) => (
-              <Post {...data} />
-            ))}
-
-            <BottomLinks />
-          </Grid>
-          <Grid item xs={0} sm={2} sx={{}} />
-
-          <Footer />
-        </Grid>
-      </Grid>
+      <>
+        <PoemsBerlin />
+        <PoemsStuttgart />
+        {/* <BottomLinks /> */}
+        <Footer />
+      </>
     )
   );
 }
