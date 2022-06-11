@@ -8,6 +8,7 @@ const style = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    pt: "15rem",
     backgroundColor: "#757575",
   },
   gridItem: {
@@ -21,6 +22,7 @@ const style = {
     fontSize: "2rem",
   },
   subTitle: {
+    pb: "15rem",
     mb: "3rem",
     color: "white",
   },

@@ -1,12 +1,11 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import Footer from "./Footer";
-
-import HomeLinks from "./HomeLinks";
 
 import BlogPicture from "./BlogPicture";
+import HomeLinks from "./HomeLinks";
+import Footer from "./Footer";
 
-function Home() {
+export default function Home() {
   const style = {
     gridContainer: {
       display: "flex",
@@ -19,8 +18,6 @@ function Home() {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      // mt: "25rem",
-      // mb: "25rem",
     },
   };
 
@@ -43,8 +40,6 @@ function Home() {
     )
   );
 }
-
-export default Home;
 
 export const authors = [
   {
