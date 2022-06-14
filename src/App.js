@@ -30,15 +30,16 @@ export default function App(location) {
     "/notes",
     "/poems",
   ];
+
   return (
     <>
       <CssBaseline />
-      {tabs(location, allTabs)}
+      {dropdownAndTabs(location, allTabs)}
     </>
   );
 }
 
-function tabs(location, allTabs) {
+function dropdownAndTabs(location, allTabs) {
   return (
     <HashRouter location={location}>
       <Route
@@ -48,76 +49,19 @@ function tabs(location, allTabs) {
             <Box sx={{ display: { xs: "block", sm: "none" } }}>
               <Dropdown />
             </Box>
+
             <Box
               sx={{
                 display: { xs: "none", sm: "block" },
                 backgroundColor: "#bdbdbd",
               }}
             >
-              <Tabs variant="scrollable" value={location.pathname}>
-                {/* left tabs */}
-                <Box sx={{ flexGrow: 1 }}>
-                  <Dropdown />
-                  <Tab
-                    sx={style.tab}
-                    xs={12}
-                    label="خانه"
-                    value="/"
-                    component={Link}
-                    to={allTabs[0]}
-                  />
-                  <Tab
-                    disabled
-                    sx={style.tab}
-                    label="تماس"
-                    value="/contact"
-                    component={Link}
-                    to={allTabs[0]}
-                  />
-                </Box>
-
-                {/* right tabs */}
-                <Tab
-                  sx={style.tab}
-                  label="کانت"
-                  value="/kant"
-                  component={Link}
-                  to={"/kant"}
-                />
-                <Tab
-                  sx={style.tab}
-                  label="نیچه"
-                  value="/nietzsche"
-                  component={Link}
-                  to={"/nietzsche"}
-                />
-                <Tab
-                  sx={style.tab}
-                  label="هایدگر"
-                  value="/heidegger"
-                  component={Link}
-                  to={"/heidegger"}
-                />
-                <Tab
-                  // disabled
-                  sx={style.tab}
-                  label="گزینه‌گویه‌ها"
-                  value="/notes"
-                  component={Link}
-                  to={"/notes"}
-                />
-                <Tab
-                  sx={style.tab}
-                  label="شعرها"
-                  value="/poems"
-                  component={Link}
-                  to={"/poems"}
-                />
-              </Tabs>
+              {tabs(location, allTabs)}
             </Box>
           </>
         )}
       />
+
       <Switch>
         <Route path={allTabs[1]} render={() => <HeideggerIndex />} />
         <Route path={"/heidegger00"} render={() => <Heidegger00 />} />
@@ -132,5 +76,70 @@ function tabs(location, allTabs) {
         <Route path={allTabs[0]} render={() => <Home />} />
       </Switch>
     </HashRouter>
+  );
+}
+
+function tabs(location, allTabs) {
+  return (
+    <Tabs variant="scrollable" value={location.pathname}>
+      {/* left tabs */}
+      <Box sx={{ flexGrow: 1 }}>
+        <Dropdown />
+        <Tab
+          sx={style.tab}
+          xs={12}
+          label="خانه"
+          value="/"
+          component={Link}
+          to={allTabs[0]}
+        />
+        <Tab
+          disabled
+          sx={style.tab}
+          label="تماس"
+          value="/contact"
+          component={Link}
+          to={allTabs[0]}
+        />
+      </Box>
+
+      {/* right tabs */}
+      <Tab
+        sx={style.tab}
+        label="کانت"
+        value="/kant"
+        component={Link}
+        to={"/kant"}
+      />
+      <Tab
+        sx={style.tab}
+        label="نیچه"
+        value="/nietzsche"
+        component={Link}
+        to={"/nietzsche"}
+      />
+      <Tab
+        sx={style.tab}
+        label="هایدگر"
+        value="/heidegger"
+        component={Link}
+        to={"/heidegger"}
+      />
+      <Tab
+        // disabled
+        sx={style.tab}
+        label="گزینه‌گویه‌ها"
+        value="/notes"
+        component={Link}
+        to={"/notes"}
+      />
+      <Tab
+        sx={style.tab}
+        label="شعرها"
+        value="/poems"
+        component={Link}
+        to={"/poems"}
+      />
+    </Tabs>
   );
 }

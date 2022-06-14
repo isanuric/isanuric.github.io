@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
-import { ScaleUpCenterAnimation } from "../../animations/ScaleUpCenter";
 
 const style = {
   card: {

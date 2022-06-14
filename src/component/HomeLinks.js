@@ -17,7 +17,7 @@ const style = {
     "&:hover": {
       // cursor: "pointer",
       backgroundColor: "#9e9e9e",
-      opacity: [0.9, 0.9, 1],
+      opacity: [0.4, 0.9, 0.8],
       // border: 35,
       // borderColor: "#9e9e9e",
       // borderRadius: "5%",

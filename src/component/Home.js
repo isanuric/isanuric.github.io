@@ -24,7 +24,7 @@ export default function Home() {
   return (
     window.scrollTo(0, 0),
     (
-      <div>
+      <>
         <BlogPicture />
 
         <Grid container xs={12} sm={12} sx={style.gridContainer}>
@@ -36,7 +36,7 @@ export default function Home() {
         </Grid>
 
         <Footer />
-      </div>
+      </>
     )
   );
 }
