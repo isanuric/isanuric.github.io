@@ -7,34 +7,12 @@ const style = {
     margin: 1,
     width: { xs: "auto", sm: "400px" },
 
-    // width: "90%",
-    // height: 470,
-    // minWidth: 370,
-
-    // maxWidth: 370,
-    // maxHeight: 470,
-
     "&:hover": {
-      // cursor: "pointer",
       backgroundColor: "#9e9e9e",
       opacity: [0.4, 0.9, 0.8],
-      // border: 35,
-      // borderColor: "#9e9e9e",
-      // borderRadius: "5%",
-      // width: { xs: "360px", sm: "400px" },
-      // height: { xs: "360", sm: "500px" },
     },
   },
-  cardMedia: {
-    // width: "90%",
-    // height: 370,
-    // maxHeight: 300,
-    // maxWidth: { xs: 300, sm: 400 },
-    // height: { xs: "400px", sm: "500px" },
-    // width: { xs: "150px", sm: "400px" },
-    // width: { xs: "360px", sm: "400px" },
-    // height: { xs: "360", sm: "500px" },
-  },
+  cardMedia: {},
   cardContent: {
     display: "flex",
     justifyContent: "space-around",
