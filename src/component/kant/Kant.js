@@ -7,32 +7,23 @@ import Data from "./Data";
 import BottomLinks from "../BottomLinks";
 import Footer from "../Footer";
 
-const useStyles = makeStyles({
+const style = {
   headTitle: {
-    marginTop: "3rem",
+    mt: "10rem",
     height: "100px",
     display: "flex",
-    // flexDirection: "column",
-    // justifyContent: "space-arownd",
     justifyContent: "center",
-    // alignItems: "center",
     color: "gray",
     fontSize: "2rem",
   },
-});
-
-// React.useEffect(() => {
-//   window.scrollTo(0, 0)
-// }
+};
 
 function Kant() {
-  const classes = useStyles();
-
   return (
     window.scrollTo(0, 0),
     (
       <div>
-        <Typography className={classes.headTitle}>ایمانوئل کانت</Typography>
+        <Typography sx={style.headTitle}>ایمانوئل کانت</Typography>
         <Grid container>
           <Grid item xs={0} sm={0} md={1}></Grid>
           <Grid item xs={12} sm={12} md={10}>

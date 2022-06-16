@@ -11,7 +11,7 @@ import BottomLinks from "../BottomLinks";
 function Home() {
   const style = {
     headTitle: {
-      marginTop: "3rem",
+      mt: "10rem",
       height: "100px",
       display: "flex",
       justifyContent: "center",
@@ -26,7 +26,6 @@ function Home() {
       fontStyle: "italic",
     },
     card: {
-      // margin: 5,
       height: "100%",
       display: "flex",
       flexDirection: "column",

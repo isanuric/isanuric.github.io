@@ -7,7 +7,7 @@ import Footer from "../Footer";
 
 const style = {
   headTitle: {
-    marginTop: "3rem",
+    mt: "10rem",
     height: "100px",
     display: "flex",
     justifyContent: "center",

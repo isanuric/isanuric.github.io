@@ -9,7 +9,8 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
   card: {
-    margin: 45,
+    // margin: 45,
+    marginTop: "10rem",
     minWidth: 250,
     userSelect: "none",
   },

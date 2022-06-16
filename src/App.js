@@ -3,7 +3,7 @@ import { CssBaseline, Tab, Tabs, AppBar, Grid } from "@mui/material";
 import { Route, Switch, Link, HashRouter } from "react-router-dom";
 import { Box } from "@mui/system";
 import Home from "./component/Home";
-import Heidegger00 from "./component/heidegger/Text00";
+import Heidegger00 from "./component/heidegger/Heidegger00";
 import Heidegger01 from "./component/heidegger/Heidegger01";
 import Heidegger02 from "./component/heidegger/Heidegger02";
 import Heidegger03 from "./component/heidegger/Heidegger03";
@@ -16,13 +16,8 @@ import HeideggerIndex from "./component/heidegger/HeideggerIndex";
 import Poems from "./component/poems/Poems";
 
 const style = {
-  gridContainer: {
-    // opacity: [1, 0.95, 0],
-    // opacity: 0.1,
-  },
   appBar: {
-    // backgroundColor: "#bdbdbd",
-    backgroundColor: "rgba(81, 86, 94, 0.95)",
+    backgroundColor: "rgba(176, 188, 206, 0.9)",
   },
   dropdown: {
     display: { xs: "block", sm: "none" },
@@ -61,7 +56,7 @@ function dropdownAndAppBar(location, allTabs) {
         path="/"
         render={({ location }) => (
           <>
-            <Grid container sx={style.gridContainer}>
+            <Grid container>
               <Grid item xs={12} position="fixed" sx={style.dropdown}>
                 <Dropdown />
               </Grid>
@@ -98,7 +93,7 @@ function dropdownAndAppBar(location, allTabs) {
 
 function AppBarCustom(location, allTabs) {
   return (
-    <AppBar color="primary" position="fixed" sx={style.appBar}>
+    <AppBar sx={style.appBar}>
       <Tabs variant="scrollable" value={location.pathname}>
         {/* left tabs */}
         <Box sx={style.leftTabs}>
