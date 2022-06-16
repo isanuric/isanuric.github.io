@@ -25,6 +25,7 @@ const style = {
   typographySignature: {
     direction: "ltr",
     pt: "3rem",
+    fontSize: { xs: ".8rem", sm: "1.1rem" },
   },
   subtitle: {
     direction: "rtl",
