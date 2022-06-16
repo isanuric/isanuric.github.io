@@ -10,6 +10,7 @@ const style = {
     justifyContent: "center",
     pt: "15rem",
     backgroundColor: "#757575",
+    userSelect: "none",
   },
   gridItem: {
     m: "3rem",

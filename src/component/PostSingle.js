@@ -11,6 +11,7 @@ const useStyles = makeStyles({
   card: {
     margin: 45,
     minWidth: 250,
+    userSelect: "none",
   },
   typography: {
     direction: "rtl",
