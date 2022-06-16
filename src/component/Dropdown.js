@@ -5,8 +5,11 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
 const style = {
+  iconButton: {
+    // backgroundColor: "#bdbdbd",
+  },
   menuIcon: {
-    // bgcolor: "gray",
+    backgroundColor: "white",
   },
 };
 
@@ -23,7 +26,7 @@ export default function Dropdown() {
   };
 
   return (
-    <IconButton>
+    <IconButton sx={style.iconButton}>
       <MenuIcon
         sx={style.menuIcon}
         id="basic-button"

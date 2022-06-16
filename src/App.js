@@ -1,5 +1,5 @@
 import * as React from "react";
-import { CssBaseline, Tab, Tabs } from "@mui/material";
+import { CssBaseline, Tab, Tabs, AppBar } from "@mui/material";
 import { Route, Switch, Link, HashRouter } from "react-router-dom";
 import { Box } from "@mui/system";
 import Home from "./component/Home";
@@ -16,8 +16,11 @@ import HeideggerIndex from "./component/heidegger/HeideggerIndex";
 import Poems from "./component/poems/Poems";
 
 const style = {
+  appBar: {
+    backgroundColor: "#bdbdbd",
+  },
   tab: {
-    fontSize: 20,
+    fontSize: { xs: "10px", sm: "15px" },
   },
 };
 
@@ -34,19 +37,19 @@ export default function App(location) {
   return (
     <>
       <CssBaseline />
-      {dropdownAndTabs(location, allTabs)}
+      {dropdownAndAppBar(location, allTabs)}
     </>
   );
 }
 
-function dropdownAndTabs(location, allTabs) {
+function dropdownAndAppBar(location, allTabs) {
   return (
     <HashRouter location={location}>
       <Route
         path="/"
         render={({ location }) => (
           <>
-            <Box sx={{ display: { xs: "block", sm: "none" } }}>
+            <Box position="fixed" sx={{ display: { xs: "block", sm: "none" } }}>
               <Dropdown />
             </Box>
 
@@ -56,7 +59,7 @@ function dropdownAndTabs(location, allTabs) {
                 backgroundColor: "#bdbdbd",
               }}
             >
-              {tabs(location, allTabs)}
+              {AppBarCustom(location, allTabs)}
             </Box>
           </>
         )}
@@ -79,67 +82,69 @@ function dropdownAndTabs(location, allTabs) {
   );
 }
 
-function tabs(location, allTabs) {
+function AppBarCustom(location, allTabs) {
   return (
-    <Tabs variant="scrollable" value={location.pathname}>
-      {/* left tabs */}
-      <Box sx={{ flexGrow: 1 }}>
-        <Dropdown />
-        <Tab
-          sx={style.tab}
-          xs={12}
-          label="خانه"
-          value="/"
-          component={Link}
-          to={allTabs[0]}
-        />
-        <Tab
-          disabled
-          sx={style.tab}
-          label="تماس"
-          value="/contact"
-          component={Link}
-          to={allTabs[0]}
-        />
-      </Box>
+    <AppBar color="primary" position="fixed" sx={style.appBar}>
+      <Tabs variant="scrollable" value={location.pathname}>
+        {/* left tabs */}
+        <Box sx={{ flexGrow: 1 }}>
+          <Dropdown />
+          <Tab
+            sx={style.tab}
+            xs={12}
+            label="خانه"
+            value="/"
+            component={Link}
+            to={allTabs[0]}
+          />
+          <Tab
+            disabled
+            sx={style.tab}
+            label="تماس"
+            value="/contact"
+            component={Link}
+            to={allTabs[0]}
+          />
+        </Box>
 
-      {/* right tabs */}
-      <Tab
-        sx={style.tab}
-        label="کانت"
-        value="/kant"
-        component={Link}
-        to={"/kant"}
-      />
-      <Tab
-        sx={style.tab}
-        label="نیچه"
-        value="/nietzsche"
-        component={Link}
-        to={"/nietzsche"}
-      />
-      <Tab
-        sx={style.tab}
-        label="هایدگر"
-        value="/heidegger"
-        component={Link}
-        to={"/heidegger"}
-      />
-      <Tab
-        // disabled
-        sx={style.tab}
-        label="گزینه‌گویه‌ها"
-        value="/notes"
-        component={Link}
-        to={"/notes"}
-      />
-      <Tab
-        sx={style.tab}
-        label="شعرها"
-        value="/poems"
-        component={Link}
-        to={"/poems"}
-      />
-    </Tabs>
+        {/* right tabs */}
+        <Tab
+          sx={style.tab}
+          label="کانت"
+          value="/kant"
+          component={Link}
+          to={"/kant"}
+        />
+        <Tab
+          sx={style.tab}
+          label="نیچه"
+          value="/nietzsche"
+          component={Link}
+          to={"/nietzsche"}
+        />
+        <Tab
+          sx={style.tab}
+          label="هایدگر"
+          value="/heidegger"
+          component={Link}
+          to={"/heidegger"}
+        />
+        <Tab
+          // disabled
+          sx={style.tab}
+          label="گزینه‌گویه‌ها"
+          value="/notes"
+          component={Link}
+          to={"/notes"}
+        />
+        <Tab
+          sx={style.tab}
+          label="شعرها"
+          value="/poems"
+          component={Link}
+          to={"/poems"}
+        />
+      </Tabs>
+    </AppBar>
   );
 }
