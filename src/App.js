@@ -1,5 +1,5 @@
 import * as React from "react";
-import { CssBaseline, Tab, Tabs, AppBar } from "@mui/material";
+import { CssBaseline, Tab, Tabs, AppBar, Grid } from "@mui/material";
 import { Route, Switch, Link, HashRouter } from "react-router-dom";
 import { Box } from "@mui/system";
 import Home from "./component/Home";
@@ -19,8 +19,15 @@ const style = {
   appBar: {
     backgroundColor: "#bdbdbd",
   },
+  dropdown: {
+    display: { xs: "block", sm: "none" },
+  },
   tab: {
-    fontSize: { xs: "10px", sm: "15px" },
+    fontSize: "18px",
+  },
+  leftTabs: {
+    flexGrow: 1,
+    color: "black",
   },
 };
 
@@ -49,18 +56,20 @@ function dropdownAndAppBar(location, allTabs) {
         path="/"
         render={({ location }) => (
           <>
-            <Box position="fixed" sx={{ display: { xs: "block", sm: "none" } }}>
-              <Dropdown />
-            </Box>
+            <Grid container>
+              <Grid item xs={12} position="fixed" sx={style.dropdown}>
+                <Dropdown />
+              </Grid>
 
-            <Box
-              sx={{
-                display: { xs: "none", sm: "block" },
-                backgroundColor: "#bdbdbd",
-              }}
-            >
-              {AppBarCustom(location, allTabs)}
-            </Box>
+              <Box
+                sx={{
+                  display: { xs: "none", sm: "block" },
+                  backgroundColor: "#bdbdbd",
+                }}
+              >
+                {AppBarCustom(location, allTabs)}
+              </Box>
+            </Grid>
           </>
         )}
       />
@@ -87,8 +96,7 @@ function AppBarCustom(location, allTabs) {
     <AppBar color="primary" position="fixed" sx={style.appBar}>
       <Tabs variant="scrollable" value={location.pathname}>
         {/* left tabs */}
-        <Box sx={{ flexGrow: 1 }}>
-          <Dropdown />
+        <Box sx={style.leftTabs}>
           <Tab
             sx={style.tab}
             xs={12}
@@ -118,9 +126,9 @@ function AppBarCustom(location, allTabs) {
         <Tab
           sx={style.tab}
           label="نیچه"
-          value="/nietzsche"
+          value={allTabs[2]}
           component={Link}
-          to={"/nietzsche"}
+          to={allTabs[2]}
         />
         <Tab
           sx={style.tab}
@@ -130,7 +138,6 @@ function AppBarCustom(location, allTabs) {
           to={"/heidegger"}
         />
         <Tab
-          // disabled
           sx={style.tab}
           label="گزینه‌گویه‌ها"
           value="/notes"
