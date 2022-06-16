@@ -16,9 +16,13 @@ import HeideggerIndex from "./component/heidegger/HeideggerIndex";
 import Poems from "./component/poems/Poems";
 
 const style = {
+  gridContainer: {
+    // opacity: [1, 0.95, 0],
+    // opacity: 0.1,
+  },
   appBar: {
-    backgroundColor: "#bdbdbd",
-    opacity: [1, 0.95, 0],
+    // backgroundColor: "#bdbdbd",
+    backgroundColor: "rgba(81, 86, 94, 0.95)",
   },
   dropdown: {
     display: { xs: "block", sm: "none" },
@@ -57,7 +61,7 @@ function dropdownAndAppBar(location, allTabs) {
         path="/"
         render={({ location }) => (
           <>
-            <Grid container>
+            <Grid container sx={style.gridContainer}>
               <Grid item xs={12} position="fixed" sx={style.dropdown}>
                 <Dropdown />
               </Grid>
