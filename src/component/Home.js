@@ -28,11 +28,9 @@ export default function Home() {
         <BlogPicture />
 
         <Grid container xs={12} sm={12} sx={style.gridContainer}>
-          <Grid container xs={10} sm={10} sx={style.gridContainer}>
-            {authors.map((author) => (
-              <HomeLinks author={author} />
-            ))}
-          </Grid>
+          {authors.map((author) => (
+            <HomeLinks author={author} />
+          ))}
         </Grid>
 
         <Footer />
