@@ -18,14 +18,13 @@ const style = {
   typography: {
     direction: "rtl",
     align: "right",
-    fontSize: { xs: "1.1rem", sm: "1.5rem" },
+    fontSize: { xs: "1rem", sm: "1.5rem" },
     whiteSpace: "pre-line",
     p: ".5rem",
   },
   typographySignature: {
     direction: "ltr",
     pt: "3rem",
-    // pl: { xs: "0rem", sm: "0rem" },
   },
   subtitle: {
     direction: "rtl",
@@ -37,13 +36,11 @@ const style = {
 
 export default function Post(props) {
   return (
-    // <ScaleUpCenterAnimation>
     <Card sx={style.card}>
       <Typography sx={style.typography}>
         {props.text}
         <Typography sx={style.typographySignature}>احسان سلمانی</Typography>
       </Typography>
     </Card>
-    // </ScaleUpCenterAnimation>
   );
 }
