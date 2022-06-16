@@ -18,6 +18,7 @@ import Poems from "./component/poems/Poems";
 const style = {
   appBar: {
     backgroundColor: "#bdbdbd",
+    opacity: 0.9,
   },
   dropdown: {
     display: { xs: "block", sm: "none" },
