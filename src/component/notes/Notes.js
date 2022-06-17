@@ -6,25 +6,24 @@ import Data from "./Data";
 import BottomLinks from "../BottomLinks";
 import Footer from "../Footer";
 
-const useStyles = makeStyles({
+const style = {
   headTitle: {
     pt: { xs: "5rem", sm: "10rem" },
+    mb: "5rem",
     height: "100px",
     display: "flex",
     justifyContent: "center",
     color: "gray",
     fontSize: "2rem",
   },
-});
+};
 
 function Notes() {
-  const classes = useStyles();
-
   return (
     window.scrollTo(0, 0),
     (
       <div>
-        <Typography className={classes.headTitle}>گزینه‌گویه‌ها</Typography>
+        <Typography sx={style.headTitle}>گزینه‌گویه‌ها</Typography>
         <Grid container>
           <Grid item xs={0} sm={0} md={1}></Grid>
           <Grid item xs={12} sm={12} md={10}>
