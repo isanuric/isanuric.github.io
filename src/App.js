@@ -1,6 +1,12 @@
 import * as React from "react";
 import { CssBaseline, Tab, Tabs, AppBar, Grid } from "@mui/material";
-import { Route, Switch, Link, HashRouter } from "react-router-dom";
+import {
+  Route,
+  Link,
+  HashRouter,
+  BrowserRouter,
+  Routes,
+} from "react-router-dom";
 import { Box } from "@mui/system";
 import Home from "./component/Home";
 import Heidegger00 from "./component/heidegger/Heidegger00";
@@ -14,144 +20,53 @@ import Notes from "./component/notes/Notes";
 import Dropdown from "./component/Dropdown";
 import HeideggerIndex from "./component/heidegger/HeideggerIndex";
 import Poems from "./component/poems/Poems";
+import { AppBarCuston } from "./component/navigation/AppBarCuston";
 
 const style = {
-  appBar: {
-    backgroundColor: "rgba(176, 188, 206, 0.9)",
-  },
   dropdown: {
     display: { xs: "block", sm: "none" },
   },
-  tab: {
-    fontSize: "18px",
-  },
-  leftTabs: {
-    flexGrow: 1,
-    color: "black",
-  },
 };
 
-export default function App(location) {
-  const allTabs = [
-    "/",
-    "/heidegger",
-    "/nietzsche",
-    "/kant",
-    "/notes",
-    "/poems",
-  ];
-
+export default function App() {
   return (
     <>
-      <CssBaseline />
-      {dropdownAndAppBar(location, allTabs)}
+      <BrowserRouter>
+        <CssBaseline />
+        <Grid container>
+          <Grid item xs={12} position="fixed" sx={style.dropdown}>
+            <Dropdown />
+          </Grid>
+
+          <Grid item xs={12}>
+            <Box
+              sx={{
+                display: { xs: "none", sm: "block" },
+              }}
+            >
+              <AppBarCuston />
+            </Box>
+          </Grid>
+        </Grid>
+
+        {routes}
+      </BrowserRouter>
     </>
   );
 }
 
-function dropdownAndAppBar(location, allTabs) {
-  return (
-    <HashRouter location={location}>
-      <Route
-        path="/"
-        render={({ location }) => (
-          <>
-            <Grid container>
-              <Grid item xs={12} position="fixed" sx={style.dropdown}>
-                <Dropdown />
-              </Grid>
-
-              <Box
-                sx={{
-                  display: { xs: "none", sm: "block" },
-                  backgroundColor: "#bdbdbd",
-                }}
-              >
-                {AppBarCustom(location, allTabs)}
-              </Box>
-            </Grid>
-          </>
-        )}
-      />
-
-      <Switch>
-        <Route path={allTabs[1]} render={() => <HeideggerIndex />} />
-        <Route path={"/heidegger00"} render={() => <Heidegger00 />} />
-        <Route path={"/heidegger01"} render={() => <Heidegger01 />} />
-        <Route path={"/heidegger02"} render={() => <Heidegger02 />} />
-        <Route path={"/heidegger03"} render={() => <Heidegger03 />} />
-        <Route path={"/heidegger04"} render={() => <Heidegger04 />} />
-        <Route path={allTabs[5]} render={() => <Poems />} />
-        <Route path={allTabs[4]} render={() => <Notes />} />
-        <Route path={allTabs[3]} render={() => <Kant />} />
-        <Route path={allTabs[2]} render={() => <Nietzsche />} />
-        <Route path={allTabs[0]} render={() => <Home />} />
-      </Switch>
-    </HashRouter>
-  );
-}
-
-function AppBarCustom(location, allTabs) {
-  return (
-    <AppBar sx={style.appBar}>
-      <Tabs variant="scrollable" value={location.pathname}>
-        {/* left tabs */}
-        <Box sx={style.leftTabs}>
-          <Tab
-            sx={style.tab}
-            xs={12}
-            label="خانه"
-            value="/"
-            component={Link}
-            to={allTabs[0]}
-          />
-          <Tab
-            disabled
-            sx={style.tab}
-            label="تماس"
-            value="/contact"
-            component={Link}
-            to={allTabs[0]}
-          />
-        </Box>
-
-        {/* right tabs */}
-        <Tab
-          sx={style.tab}
-          label="کانت"
-          value="/kant"
-          component={Link}
-          to={"/kant"}
-        />
-        <Tab
-          sx={style.tab}
-          label="نیچه"
-          value={allTabs[2]}
-          component={Link}
-          to={allTabs[2]}
-        />
-        <Tab
-          sx={style.tab}
-          label="هایدگر"
-          value="/heidegger"
-          component={Link}
-          to={"/heidegger"}
-        />
-        <Tab
-          sx={style.tab}
-          label="گزینه‌گویه‌ها"
-          value="/notes"
-          component={Link}
-          to={"/notes"}
-        />
-        <Tab
-          sx={style.tab}
-          label="شعرها"
-          value="/poems"
-          component={Link}
-          to={"/poems"}
-        />
-      </Tabs>
-    </AppBar>
-  );
-}
+const routes = (
+  <Routes>
+    <Route exact="true" path="/" element={<Home />} />
+    <Route exact="true" path="/kant" element={<Kant />} />
+    <Route exact="true" path="/poems" element={<Poems />} />
+    <Route exact="true" path="/notes" element={<Notes />} />
+    <Route exact="true" path="/nietzsche" element={<Nietzsche />} />
+    <Route exact="true" path="/heidegger00" element={<Heidegger00 />} />
+    <Route exact="true" path="/heidegger01" element={<Heidegger01 />} />
+    <Route exact="true" path="/heidegger02" element={<Heidegger02 />} />
+    <Route exact="true" path="/heidegger03" element={<Heidegger03 />} />
+    <Route exact="true" path="/heidegger04" element={<Heidegger04 />} />
+    <Route exact="true" path="/heidegger" element={<HeideggerIndex />} />
+  </Routes>
+);

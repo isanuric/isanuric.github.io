@@ -42,31 +42,31 @@ export default function Home() {
 export const authors = [
   {
     img: require("../images/heidegger.jpg").default,
-    href: "#/heidegger",
+    href: "/heidegger",
     text: "هایدگر",
   },
   {
     img: require("../images/nietzsche.jpg").default,
     alt: "Nietzsche",
-    href: "#/nietzsche",
+    href: "/nietzsche",
     text: "فردریش ویلهلم نیچه",
   },
   {
     img: require("../images/kant.jpg").default,
     alt: "Kant",
-    href: "#/kant",
+    href: "/kant",
     text: "ایمانوئل کانت",
   },
   {
     img: require("../images/abstract01.jpg").default,
     alt: "",
-    href: "#/notes",
+    href: "/notes",
     text: "گزینه‌گویه‌ها",
   },
   {
     img: require("../images/abstract02.jpg").default,
     alt: "Poems",
-    href: "#/poems",
+    href: "/poems",
     text: "شعرها",
   },
 ];
