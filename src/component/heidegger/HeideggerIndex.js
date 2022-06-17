@@ -142,39 +142,3 @@ function Home() {
 }
 
 export default Home;
-
-{
-  /* <BlogPicture /> */
-}
-{
-  /* <Grid container>
-          <Grid item xs={12} sm={2}></Grid>
-
-          <Grid item xs={12} sm={4}>
-            <Card sx={style.card}>
-              <CardActionArea href={"#/heidegger"}>
-                <CardMedia
-                  sx={style.cardMedia}
-                  component="img"
-                  image="https://static.dw.com/image/17615415_303.jpg"
-                  alt="Heidegger"
-                />
-                <CardContent sx={style.cardContent}>مارتین هایدگر</CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card sx={style.card}>
-              <CardActionArea href={"#/heidegger2"}>
-                <CardMedia
-                  sx={style.cardMedia}
-                  component="img"
-                  image={cards.image}
-                  alt="Heidegger2"
-                />
-                <CardContent sx={style.cardContent}>مارتین هایدگر</CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-        </Grid> */
-}
