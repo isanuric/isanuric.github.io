@@ -8,7 +8,7 @@ const style = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    pt: "15rem",
+    pt: { xs: "5rem", sm: "10rem" },
     backgroundColor: "#757575",
     userSelect: "none",
   },
@@ -16,15 +16,13 @@ const style = {
     m: "3rem",
   },
   headTitle: {
-    mt: "3rem",
     display: "flex",
     justifyContent: "center",
     color: "white",
     fontSize: "2rem",
   },
   subTitle: {
-    pb: "15rem",
-    mb: "3rem",
+    mb: "5rem",
     color: "white",
   },
 };

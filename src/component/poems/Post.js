@@ -18,7 +18,7 @@ const style = {
   typography: {
     direction: "rtl",
     align: "right",
-    fontSize: { xs: "1rem", sm: "1.5rem" },
+    fontSize: { xs: "1rem", sm: "1.2rem", md: "1.5rem"},
     whiteSpace: "pre-line",
     p: ".5rem",
   },
