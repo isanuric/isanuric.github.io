@@ -31,7 +31,7 @@ const style = {
 export default function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <CssBaseline />
         <Grid container>
           <Grid item xs={12} position="fixed" sx={style.dropdown}>
@@ -50,7 +50,7 @@ export default function App() {
         </Grid>
 
         {routes}
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }

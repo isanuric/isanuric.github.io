@@ -48,19 +48,19 @@ export default function Dropdown() {
           <MenuItem onClick={handleClose}>خانه</MenuItem>
         </Link>
 
-        <Link href="/kant" underline="none">
+        <Link href="#/kant" underline="none">
           <MenuItem onClick={handleClose}>کانت</MenuItem>
         </Link>
-        <Link href="/nietzsche" underline="none">
+        <Link href="#/nietzsche" underline="none">
           <MenuItem onClick={handleClose}>نیچه</MenuItem>
         </Link>
-        <Link href="/heidegger" underline="none">
+        <Link href="#/heidegger" underline="none">
           <MenuItem onClick={handleClose}>هایدگر</MenuItem>
         </Link>
-        <Link href="/notes" underline="none">
+        <Link href="#/notes" underline="none">
           <MenuItem sx={style.link}>گزینه‌گویه‌ها</MenuItem>
         </Link>
-        <Link href="/poems" underline="none">
+        <Link href="#/poems" underline="none">
           <MenuItem sx={style.link}>شعرها</MenuItem>
         </Link>
         {/* <Link href="#" underline="none">
