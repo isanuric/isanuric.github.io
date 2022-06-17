@@ -18,7 +18,7 @@ import { AppBarCuston } from "./component/navigation/AppBarCuston";
 
 const style = {
   dropdown: {
-    display: { xs: "block", sm: "none", md: "block" },
+    display: { xs: "block", sm: "block", md: "block" },
   },
 };
 
