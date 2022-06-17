@@ -1,0 +1,14 @@
+.inactive-style {
+    text-decoration: none;
+    padding: .9rem;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+.active-style{
+    text-decoration: none; 
+    padding: .9rem;
+    color: rgb(61, 61, 66);
+    background-color: rgb(128, 143, 156);
+    font-size: 12px;
+}
