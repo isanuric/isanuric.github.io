@@ -11,7 +11,7 @@ import Button from "@mui/material/Button";
 function Text() {
   const style = {
     card: {
-      pt: "3rem",
+      pt: "5rem",
     },
   };
 

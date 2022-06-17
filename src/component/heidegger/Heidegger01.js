@@ -4,6 +4,14 @@ import BottomLinks from "../BottomLinks";
 import Footer from "../Footer";
 import PostSingle from "../PostSingle";
 
+function Text() {
+  const style = {
+    card: {
+      pt: "5rem",
+    },
+  };
+}
+
 export default function Heidegger01() {
   return (
     window.scrollTo(0, 0),
