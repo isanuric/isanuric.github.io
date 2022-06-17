@@ -1,12 +1,6 @@
 import * as React from "react";
-import { CssBaseline, Tab, Tabs, AppBar, Grid } from "@mui/material";
-import {
-  Route,
-  Link,
-  HashRouter,
-  BrowserRouter,
-  Routes,
-} from "react-router-dom";
+import { CssBaseline, Grid } from "@mui/material";
+import { Route, HashRouter, Routes } from "react-router-dom";
 import { Box } from "@mui/system";
 import Home from "./component/Home";
 import Heidegger00 from "./component/heidegger/Heidegger00";
@@ -24,7 +18,7 @@ import { AppBarCuston } from "./component/navigation/AppBarCuston";
 
 const style = {
   dropdown: {
-    display: { xs: "block", sm: "none" },
+    display: { xs: "block", sm: "none", md: "block" },
   },
 };
 
@@ -41,7 +35,7 @@ export default function App() {
           <Grid item xs={12}>
             <Box
               sx={{
-                display: { xs: "none", sm: "block" },
+                display: { xs: "none", sm: "none", md: "block" },
               }}
             >
               <AppBarCuston />
