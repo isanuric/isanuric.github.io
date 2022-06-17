@@ -1,5 +1,4 @@
 import React from "react";
-import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 
@@ -11,8 +10,6 @@ const style = {
     minHeight: "100vh",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    // backgroundPosition: "center",
-    // position: "relative",
 
     // font
     display: "flex",
@@ -30,9 +27,6 @@ const style = {
     color: "#ffe",
     fontSize: ".9rem",
     fontStyle: "italic",
-    // textAlign: "center",
-    // fontFamily: "Monospace",
-    // m: 50,
   },
 };
 
