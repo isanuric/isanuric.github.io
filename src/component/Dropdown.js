@@ -5,6 +5,9 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
 const style = {
+  link: {
+
+  },
   iconButton: {
     // backgroundColor: "#bdbdbd",
   },
@@ -58,10 +61,14 @@ export default function Dropdown() {
           <MenuItem onClick={handleClose}>هایدگر</MenuItem>
         </Link>
         <Link href="#/notes" underline="none">
-          <MenuItem sx={style.link}>گزینه‌گویه‌ها</MenuItem>
+          <MenuItem onClick={handleClose} sx={style.link}>
+            گزینه‌گویه‌ها
+          </MenuItem>
         </Link>
         <Link href="#/poems" underline="none">
-          <MenuItem sx={style.link}>شعرها</MenuItem>
+          <MenuItem onClick={handleClose} sx={style.link}>
+            شعرها
+          </MenuItem>
         </Link>
         {/* <Link href="#" underline="none">
           <MenuItem onClick={handleClose}>تماس</MenuItem>
